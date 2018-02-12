@@ -19,6 +19,10 @@ a.blog {
 a.logo:hover, a.blog:hover, a.projects:hover {
   color: #FF3769; }
 
+caption {
+  font-size: 1em;
+  font-weight: 100; }
+
 ul {
   font-size: 0.8em;
   list-style: none;
@@ -31,7 +35,7 @@ a.projects, li {
   list-style: none;
   padding: 0;
   color: #0011FF;
-  text-decoration: none; }
+  text-decoration: line-through; }
 
 b.intro {
   font-weight: 400;
@@ -61,7 +65,7 @@ section.info {
   margin: 3.5em 1em 3.5em 1em;
   padding: 0;
   max-width: 670px;
-  flex-direction: row; }
+  flex-direction: column; }
 
 html {
   font-family: 'Inter UI', sans-serif; }
@@ -80,6 +84,10 @@ a.blog {
 a.logo:hover, a.blog:hover, a.projects:hover {
   color: #FF3769; }
 
+caption {
+  font-size: 1em;
+  font-weight: 100; }
+
 ul {
   font-size: 0.8em;
   list-style: none;
@@ -92,7 +100,7 @@ a.projects, li {
   list-style: none;
   padding: 0;
   color: #0011FF;
-  text-decoration: none; }
+  text-decoration: line-through; }
 
 b.intro {
   font-weight: 400;

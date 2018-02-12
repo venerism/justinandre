@@ -24,7 +24,10 @@ a.logo:hover, a.blog:hover, a.projects:hover{
   color:$link-hover;
 }
 
-
+caption{
+  font-size: 1em;
+  font-weight: 100;
+}
 
 ul{
   font-size: 0.8em;
@@ -39,8 +42,7 @@ a.projects,li{
   list-style: none;
   padding: 0;
   color: $link-active;
-  text-decoration: none;
-}
+  text-decoration:line-through;}
 
 b.intro{
   font-weight: 400;
