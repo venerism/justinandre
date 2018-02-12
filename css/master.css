@@ -32,7 +32,7 @@ li {
   padding: 0;
   color: #0011FF; }
 
-b {
+b.intro {
   font-weight: 400;
   font-size: 2.5em;
   color: #3E3535; }
@@ -92,7 +92,7 @@ li {
   padding: 0;
   color: #0011FF; }
 
-b {
+b.intro {
   font-weight: 400;
   font-size: 2.5em;
   color: #3E3535; }
