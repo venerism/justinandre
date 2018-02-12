@@ -1,0 +1,16 @@
+@mixin phone {
+    @media only screen and (max-width: 425px){
+      @content;
+    }
+}
+@mixin tablet {
+  @media only screen and (max-width: 768px){}
+}
+
+@mixin flexbox() {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
