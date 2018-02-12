@@ -20,9 +20,11 @@ a.blog{
   padding: 0px 7.5px 0px 7.5px;
 }
 
-a.logo:hover, a.blog:hover{
+a.logo:hover, a.blog:hover, a.projects:hover{
   color:$link-hover;
 }
+
+
 
 ul{
   font-size: 0.8em;
@@ -30,13 +32,14 @@ ul{
   padding: 0;
 }
 
-li{
+a.projects,li{
   font-size: 1.5em;
   font-family: 'Roboto Mono', monospace;
   text-transform: uppercase;
   list-style: none;
   padding: 0;
   color: $link-active;
+  text-decoration: none;
 }
 
 b.intro{
