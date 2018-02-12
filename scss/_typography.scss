@@ -1,11 +1,45 @@
 @import url("https://rsms.me/inter/inter-ui.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300');
+@import "colours";
 
+html{
+font-family: 'Inter UI', sans-serif;
+}
 
-h1{
-  font-size: 1em;
+a.logo, a.blog{
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 0.8em;
+  color:$default-text;
+  letter-spacing: 1.2px;
+}
+
+a.blog{
+  padding: 0px 7.5px 0px 7.5px;
+}
+
+a.logo:hover, a.blog:hover{
+  color:$link-hover;
 }
 
 ul{
+  font-size: 0.8em;
   list-style: none;
   padding: 0;
+}
+
+li{
+  font-size: 1.5em;
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+  list-style: none;
+  padding: 0;
+  color: $link-active;
+}
+
+b{
+  font-weight: 400;
+  font-size:2.5em;
+  color:$default-text;
 }
