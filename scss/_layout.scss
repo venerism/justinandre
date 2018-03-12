@@ -4,9 +4,19 @@
 //----------------------
 
 html{
-background: $background-grey;
+
 margin: 0;
 padding: 0;
+}
+
+
+body{
+background: $background-grey;
+}
+
+
+body.green{
+  background-color: green;
 }
 
 content{
@@ -38,11 +48,17 @@ nav{
 
 }
 
+
 article{
   margin: 1em 1em 1em 1em;
   display: flex;
 }
 
+ul.projects{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
 
 section.info{
   //border: 1px solid red;

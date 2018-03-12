@@ -28,7 +28,20 @@ ul {
   list-style: none;
   padding: 0; }
 
-a.projects, li {
+a.project-list {
+  font-family: 'Inter UI', sans-serif;
+  font-size: 8em;
+  text-decoration: underline;
+  font-weight: 100; }
+
+a.project-list:visited {
+  color: #0011FF; }
+
+a.project-list:hover {
+  color: #FFFFFF;
+  transition-duration: 0.2s; }
+
+a.elsewhere {
   font-size: 2em;
   font-family: 'Roboto Mono', monospace;
   list-style: none;
@@ -42,9 +55,14 @@ b.intro {
   color: #3E3535; }
 
 html {
-  background: #F7F7F7;
   margin: 0;
   padding: 0; }
+
+body {
+  background: #F7F7F7; }
+
+body.green {
+  background-color: green; }
 
 content {
   max-width: 1440px; }
@@ -69,6 +87,11 @@ nav {
 article {
   margin: 1em 1em 1em 1em;
   display: flex; }
+
+ul.projects {
+  list-style: none;
+  display: flex;
+  flex-direction: column; }
 
 section.info {
   display: flex;
@@ -103,7 +126,20 @@ ul {
   list-style: none;
   padding: 0; }
 
-a.projects, li {
+a.project-list {
+  font-family: 'Inter UI', sans-serif;
+  font-size: 8em;
+  text-decoration: underline;
+  font-weight: 100; }
+
+a.project-list:visited {
+  color: #0011FF; }
+
+a.project-list:hover {
+  color: #FFFFFF;
+  transition-duration: 0.2s; }
+
+a.elsewhere {
   font-size: 2em;
   font-family: 'Roboto Mono', monospace;
   list-style: none;

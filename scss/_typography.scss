@@ -35,7 +35,22 @@ ul{
   padding: 0;
 }
 
-a.projects,li{
+a.project-list{
+  font-family: 'Inter UI', sans-serif;
+  font-size: 8em;
+  text-decoration: underline;
+  font-weight: 100;
+}
+a.project-list:visited{
+  color:$link-active;
+}
+a.project-list:hover{
+  color: $white;
+  transition-duration: 0.2s;
+}
+
+
+a.elsewhere{
   font-size: 2em;
   font-family: 'Roboto Mono', monospace;
   //text-transform: uppercase;
