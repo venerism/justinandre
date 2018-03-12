@@ -55,6 +55,17 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin: 1em 1em 1em 1em; }
+  nav aside.nav-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; }
+    nav aside.nav-left img.logo-img {
+      width: 50%;
+      height: 50%; }
+    nav aside.nav-left a {
+      margin: 0 0 0 0;
+      padding: 0 0 0 0; }
 
 article {
   margin: 1em 1em 1em 1em;
