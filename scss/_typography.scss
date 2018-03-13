@@ -59,6 +59,11 @@ a.elsewhere{
   padding-right: 0.2em;
   color: $link-active;
   text-decoration:none;}
+a.elsewhere:hover{
+  color:$link-hover;
+  transition-duration: 0.2s;
+}
+
 
 b.intro{
   font-weight: 400;
