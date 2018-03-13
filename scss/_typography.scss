@@ -19,17 +19,15 @@ a.logo, a.blog{
 a.blog{
   padding: 0px 7.5px 0px 7.5px;
 }
-
 a.logo:hover, a.blog:hover, a.projects:hover{
   color:$link-hover;
   transition-duration: 0.2s;
 }
 
-caption{
-  font-size: 1em;
-  font-weight: 100;
-}
-
+// caption{
+//   font-size: 1em;
+//   font-weight: 100;
+// }
 ul{
   font-size: 0.8em;
   list-style: none;
@@ -43,18 +41,14 @@ a.project-list{
   font-weight: 100;
   color:$link-active;
 }
-
-
 a.project-list:hover{
 color: $white;
  transition-duration: 0.2s;
 }
 
-
 a.elsewhere{
   font-size: 2em;
   font-family: 'Roboto Mono', monospace;
-  //text-transform: uppercase;
   list-style: none;
   padding-right: 0.2em;
   color: $link-active;
@@ -65,7 +59,7 @@ a.elsewhere:hover{
 }
 
 
-b.intro{
+b.info{
   font-weight: 400;
   font-size:2.5em;
   color:$default-text;
