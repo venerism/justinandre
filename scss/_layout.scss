@@ -20,15 +20,19 @@ body.green{
 }
 
 content{
+  padding: 0;
   margin: 1em;
   display: flex;
   flex-direction: column;
   //border: 1px solid red;
+  flex-wrap: wrap;
 }
+
 
 article{
   //border: 1px solid blue;
   padding: 0;
+  width: 100%;
 }
 
 nav{
@@ -66,8 +70,9 @@ ul.projects{
 section.info{
   //border: 1px solid red;
   display: flex;
-  margin: 3.5em 1em 3.5em 1em;
-  padding: 0;
-  max-width: 670px;
+  width: 100%;
+  margin: 0;
+  padding: 4em 0 4em 0;
+  width: 100%;
   flex-direction: column;
 }
