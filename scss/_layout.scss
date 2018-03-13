@@ -20,7 +20,15 @@ body.green{
 }
 
 content{
-max-width: 1440px;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  //border: 1px solid red;
+}
+
+article{
+  //border: 1px solid blue;
+  padding: 0;
 }
 
 nav{
@@ -29,7 +37,7 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1em 1em 1em 1em;
+  margin: 1em ;
 
   aside.nav-left{
     display: flex;
@@ -48,11 +56,6 @@ nav{
 
 }
 
-
-article{
-  margin: 1em 1em 1em 1em;
-  display: flex;
-}
 
 ul.projects{
   list-style: none;

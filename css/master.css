@@ -33,9 +33,7 @@ a.project-list {
   font-family: 'Inter UI', sans-serif;
   font-size: 8em;
   text-decoration: none;
-  font-weight: 100; }
-
-a.project-list:visited {
+  font-weight: 100;
   color: #0011FF; }
 
 a.project-list:hover {
@@ -69,13 +67,18 @@ body.green {
   background-color: green; }
 
 content {
-  max-width: 1440px; }
+  margin: 1em;
+  display: flex;
+  flex-direction: column; }
+
+article {
+  padding: 0; }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1em 1em 1em 1em; }
+  margin: 1em; }
   nav aside.nav-left {
     display: flex;
     flex-direction: row;
@@ -87,10 +90,6 @@ nav {
     nav aside.nav-left a {
       margin: 0 0 0 0;
       padding: 0 0 0 0; }
-
-article {
-  margin: 1em 1em 1em 1em;
-  display: flex; }
 
 ul.projects {
   list-style: none;
@@ -135,9 +134,7 @@ a.project-list {
   font-family: 'Inter UI', sans-serif;
   font-size: 8em;
   text-decoration: none;
-  font-weight: 100; }
-
-a.project-list:visited {
+  font-weight: 100;
   color: #0011FF; }
 
 a.project-list:hover {
