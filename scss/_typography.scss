@@ -22,6 +22,7 @@ a.blog{
 
 a.logo:hover, a.blog:hover, a.projects:hover{
   color:$link-hover;
+  transition-duration: 0.2s;
 }
 
 caption{
@@ -38,7 +39,8 @@ ul{
 a.project-list{
   font-family: 'Inter UI', sans-serif;
   font-size: 8em;
-  text-decoration: underline;
+  //border-bottom: 5px solid $link-active;
+  text-decoration: none;
   font-weight: 100;
 }
 a.project-list:visited{
@@ -63,4 +65,8 @@ b.intro{
   font-weight: 400;
   font-size:2.5em;
   color:$default-text;
+}
+
+p{
+  font-size: 18px;
 }

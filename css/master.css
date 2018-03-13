@@ -17,7 +17,8 @@ a.blog {
   padding: 0px 7.5px 0px 7.5px; }
 
 a.logo:hover, a.blog:hover, a.projects:hover {
-  color: #FF3769; }
+  color: #FF3769;
+  transition-duration: 0.2s; }
 
 caption {
   font-size: 1em;
@@ -31,7 +32,7 @@ ul {
 a.project-list {
   font-family: 'Inter UI', sans-serif;
   font-size: 8em;
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: 100; }
 
 a.project-list:visited {
@@ -53,6 +54,9 @@ b.intro {
   font-weight: 400;
   font-size: 2.5em;
   color: #3E3535; }
+
+p {
+  font-size: 18px; }
 
 html {
   margin: 0;
@@ -115,7 +119,8 @@ a.blog {
   padding: 0px 7.5px 0px 7.5px; }
 
 a.logo:hover, a.blog:hover, a.projects:hover {
-  color: #FF3769; }
+  color: #FF3769;
+  transition-duration: 0.2s; }
 
 caption {
   font-size: 1em;
@@ -129,7 +134,7 @@ ul {
 a.project-list {
   font-family: 'Inter UI', sans-serif;
   font-size: 8em;
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: 100; }
 
 a.project-list:visited {
@@ -151,5 +156,8 @@ b.intro {
   font-weight: 400;
   font-size: 2.5em;
   color: #3E3535; }
+
+p {
+  font-size: 18px; }
 
 /*# sourceMappingURL=master.css.map */
