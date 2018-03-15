@@ -136,6 +136,10 @@ nav {
     nav aside.nav-left img.logo-img {
       width: 50%;
       height: 50%; }
+    nav aside.nav-left img.logo-img:hover {
+      width: 55%;
+      height: 55%;
+      transition-duration: 0.2s; }
     nav aside.nav-left a {
       margin: 0 0 0 0;
       padding: 0 0 0 0; }

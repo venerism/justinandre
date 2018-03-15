@@ -40,6 +40,12 @@ nav{
       width: 50%;
       height: 50%;
     }
+img.logo-img:hover{
+  width: 55%;
+  height: 55%;
+  transition-duration: 0.2s;
+}
+
     a{
       margin: 0 0 0 0;
       padding: 0 0 0 0;
