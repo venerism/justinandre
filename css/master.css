@@ -74,7 +74,7 @@ li.creditsuisse:hover ~ .bg {
 li.posters:hover ~ .bg {
   background: #262626; }
 
-li.milya:hover + li.swish,
+li.milya:hover ~ li.swish,
 li.milya:hover ~ li.creditsuisse,
 li.milya:hover ~ li.posters {
   opacity: 0; }
@@ -104,9 +104,6 @@ html {
 body {
   background: #F7F7F7; }
 
-body.green {
-  background-color: green; }
-
 content {
   padding: 0;
   margin: 1em;
@@ -135,12 +132,6 @@ nav {
       margin: 0 0 0 0;
       padding: 0 0 0 0; }
 
-ul.projects {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden; }
-
 section.info {
   display: flex;
   width: 100%;
@@ -148,6 +139,12 @@ section.info {
   padding: 4em 0 4em 0;
   width: 100%;
   flex-direction: column; }
+
+ul.projects {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
 
 .bg {
   position: fixed;
@@ -231,7 +228,7 @@ li.creditsuisse:hover ~ .bg {
 li.posters:hover ~ .bg {
   background: #262626; }
 
-li.milya:hover + li.swish,
+li.milya:hover ~ li.swish,
 li.milya:hover ~ li.creditsuisse,
 li.milya:hover ~ li.posters {
   opacity: 0; }

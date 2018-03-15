@@ -4,19 +4,12 @@
 //----------------------
 
 html{
-
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
 
 body{
-background: $background-grey;
-}
-
-
-body.green{
-  background-color: green;
+  background: $background-grey;
 }
 
 content{
@@ -26,7 +19,6 @@ content{
   flex-direction: column;
   flex-wrap: wrap;
 }
-
 
 article{
   padding: 0;
@@ -44,7 +36,7 @@ nav{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    img.logo-img{
+  img.logo-img{
       width: 50%;
       height: 50%;
     }
@@ -57,13 +49,6 @@ nav{
 }
 
 
-ul.projects{
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden
-}
-
 section.info{
   display: flex;
   width: 100%;
@@ -75,6 +60,13 @@ section.info{
 
 
 //---Projects---//
+
+ul.projects{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden
+}
 
 .bg {
   position: fixed;
