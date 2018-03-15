@@ -6,7 +6,7 @@
 html{
 font-family: 'Inter UI', sans-serif;
 }
-
+//---Portfolio---//
 a.logo, a.blog{
   text-transform: uppercase;
   text-decoration: none;
@@ -24,26 +24,20 @@ a.logo:hover, a.blog:hover, a.projects:hover{
   transition-duration: 0.2s;
 }
 
-// caption{
-//   font-size: 1em;
-//   font-weight: 100;
-// }
 ul{
   font-size: 0.8em;
   list-style: none;
   padding: 0;
 }
 
-a.project-list{
-  font-family: 'Inter UI', sans-serif;
-  font-size: 8em;
-  text-decoration: none;
-  font-weight: 100;
-  color:$link-active;
+b.info{
+  font-weight: 400;
+  font-size:2.5em;
+  color:$default-text;
 }
-a.project-list:hover{
-color: $white;
- transition-duration: 0.2s;
+
+p{
+  font-size: 18px;
 }
 
 a.elsewhere{
@@ -59,12 +53,64 @@ a.elsewhere:hover{
 }
 
 
-b.info{
-  font-weight: 400;
-  font-size:2.5em;
-  color:$default-text;
+
+//---Project Lists---//
+a.project-list{
+  font-family: 'Inter UI', sans-serif;
+  font-size: 8em;
+  text-decoration: none;
+  font-weight: 100;
+  color:$link-active;
+}
+a.project-list:hover{
+color: $white;
+ transition-duration: 0.2s;
 }
 
-p{
-  font-size: 18px;
+
+li.milya, li.swish{
+  width: min-content;
+}
+li.creditsuisse, li.posters{
+  width: max-content;
+}
+
+//--Project Transitions--//
+li.milya:hover ~.bg{
+  background: $milya;
+}
+li.swish:hover ~.bg{
+  background: $swish;
+}
+li.creditsuisse:hover ~.bg{
+  background: $creditsuisse;
+}
+li.posters:hover ~.bg{
+  background: $posters;
+}
+
+
+li.milya:hover ~ li.swish,
+li.milya:hover ~ li.creditsuisse,
+li.milya:hover ~ li.posters{
+  opacity: 0;
+}
+li.swish:hover ~ li.milya,
+li.swish:hover ~ li.creditsuisse,
+li.swish:hover ~ li.posters{
+  opacity: 0;
+}
+li.creditsuisse:hover ~ li.milya,
+li.creditsussie:hover ~ li.swish,
+li.creditsuisse:hover ~ li.posters{
+  opacity: 0;
+}
+li.posters:hover ~ li.milya,
+li.posters:hover ~ li.swish,
+li.posters:hover ~ li.creditsuisse{
+  opacity: 0;
+}
+
+li.milya:hover ~{
+  opacity: 0;
 }
