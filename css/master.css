@@ -74,7 +74,7 @@ li.creditsuisse:hover ~ .bg {
 li.posters:hover ~ .bg {
   background: #262626; }
 
-li.milya:hover ~ li.swish,
+li.milya:hover + li.swish,
 li.milya:hover ~ li.creditsuisse,
 li.milya:hover ~ li.posters {
   opacity: 0; }
@@ -94,7 +94,7 @@ li.posters:hover ~ li.swish,
 li.posters:hover ~ li.creditsuisse {
   opacity: 0; }
 
-li.milya:hover ~ {
+li.posters:hover + li.milya {
   opacity: 0; }
 
 html {
@@ -231,7 +231,7 @@ li.creditsuisse:hover ~ .bg {
 li.posters:hover ~ .bg {
   background: #262626; }
 
-li.milya:hover ~ li.swish,
+li.milya:hover + li.swish,
 li.milya:hover ~ li.creditsuisse,
 li.milya:hover ~ li.posters {
   opacity: 0; }
@@ -251,7 +251,7 @@ li.posters:hover ~ li.swish,
 li.posters:hover ~ li.creditsuisse {
   opacity: 0; }
 
-li.milya:hover ~ {
+li.posters:hover + li.milya {
   opacity: 0; }
 
 /*# sourceMappingURL=master.css.map */

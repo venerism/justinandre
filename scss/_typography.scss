@@ -111,6 +111,6 @@ li.posters:hover ~ li.creditsuisse{
   opacity: 0;
 }
 
-li.milya:hover ~{
+li.posters:hover + li.milya{
   opacity: 0;
 }
