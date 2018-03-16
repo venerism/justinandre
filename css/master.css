@@ -65,10 +65,13 @@ a.project-list:hover {
   transition-duration: 0.2s; }
 
 li.milya, li.swish {
-  width: min-content; }
+  width: min-content;
+  display: block;
+  opacity: 1; }
 
 li.creditsuisse, li.posters {
-  width: max-content; }
+  width: max-content;
+  opacity: 1; }
 
 li.milya:hover ~ .bg {
   background: #422FFA; }
@@ -85,25 +88,30 @@ li.posters:hover ~ .bg {
 li.milya:hover ~ li.swish,
 li.milya:hover ~ li.creditsuisse,
 li.milya:hover ~ li.posters {
-  opacity: 0; }
+  opacity: 0;
+  display: none; }
 
 li.swish:hover ~ li.milya,
 li.swish:hover ~ li.creditsuisse,
 li.swish:hover ~ li.posters {
-  opacity: 0; }
+  opacity: 0;
+  display: none; }
 
 li.creditsuisse:hover ~ li.milya,
 li.creditsussie:hover ~ li.swish,
 li.creditsuisse:hover ~ li.posters {
-  opacity: 0; }
+  opacity: 0;
+  display: none; }
 
 li.posters:hover ~ li.milya,
 li.posters:hover ~ li.swish,
 li.posters:hover ~ li.creditsuisse {
-  opacity: 0; }
+  opacity: 0;
+  display: none; }
 
 li.posters:hover + li.milya {
-  opacity: 0; }
+  opacity: 0;
+  display: none; }
 
 html {
   margin: 0;
@@ -156,7 +164,8 @@ ul.projects {
   list-style: none;
   display: flex;
   flex-direction: column;
-  overflow: hidden; }
+  overflow: hidden;
+  min-height: 532px; }
 
 .bg {
   position: fixed;
@@ -231,10 +240,13 @@ a.project-list:hover {
   transition-duration: 0.2s; }
 
 li.milya, li.swish {
-  width: min-content; }
+  width: min-content;
+  display: block;
+  opacity: 1; }
 
 li.creditsuisse, li.posters {
-  width: max-content; }
+  width: max-content;
+  opacity: 1; }
 
 li.milya:hover ~ .bg {
   background: #422FFA; }
@@ -251,24 +263,29 @@ li.posters:hover ~ .bg {
 li.milya:hover ~ li.swish,
 li.milya:hover ~ li.creditsuisse,
 li.milya:hover ~ li.posters {
-  opacity: 0; }
+  opacity: 0;
+  display: none; }
 
 li.swish:hover ~ li.milya,
 li.swish:hover ~ li.creditsuisse,
 li.swish:hover ~ li.posters {
-  opacity: 0; }
+  opacity: 0;
+  display: none; }
 
 li.creditsuisse:hover ~ li.milya,
 li.creditsussie:hover ~ li.swish,
 li.creditsuisse:hover ~ li.posters {
-  opacity: 0; }
+  opacity: 0;
+  display: none; }
 
 li.posters:hover ~ li.milya,
 li.posters:hover ~ li.swish,
 li.posters:hover ~ li.creditsuisse {
-  opacity: 0; }
+  opacity: 0;
+  display: none; }
 
 li.posters:hover + li.milya {
-  opacity: 0; }
+  opacity: 0;
+  display: none; }
 
 /*# sourceMappingURL=master.css.map */
