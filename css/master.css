@@ -2,7 +2,11 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300");
 @import url("https://rsms.me/inter/inter-ui.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300");
-html {
+@import url("https://rsms.me/inter/inter-ui.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300");
+@import url("https://rsms.me/inter/inter-ui.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300");
+body {
   font-family: 'Inter UI', sans-serif; }
 
 a.logo, a.blog {
@@ -32,7 +36,7 @@ b.info {
   color: #3E3535; }
   @media (max-width: 599px) {
     b.info {
-      font-size: 1.5em;
+      font-size: 1.4em;
       width: 100%; } }
 
 p {
@@ -50,82 +54,18 @@ a.elsewhere:hover {
   color: #FF3769;
   transition-duration: 0.2s; }
 
-a.project-list {
-  font-family: 'Inter UI', sans-serif;
-  font-size: 8em;
-  text-decoration: none;
-  font-weight: 100;
-  color: #0011FF; }
-  @media (max-width: 599px) {
-    a.project-list {
-      font-size: 3em; } }
-
-a.project-list:hover {
-  color: #FFFFFF;
-  transition-duration: 0.2s; }
-
-li.milya, li.swish {
-  width: min-content;
-  display: block;
-  opacity: 1; }
-
-li.creditsuisse, li.posters {
-  width: max-content;
-  opacity: 1; }
-
-li.milya:hover ~ .bg {
-  background: #422FFA; }
-
-li.swish:hover ~ .bg {
-  background: #FFBB41; }
-
-li.creditsuisse:hover ~ .bg {
-  background: #172F5B; }
-
-li.posters:hover ~ .bg {
-  background: #262626; }
-
-li.milya:hover ~ li.swish,
-li.milya:hover ~ li.creditsuisse,
-li.milya:hover ~ li.posters {
-  opacity: 0;
-  display: none; }
-
-li.swish:hover ~ li.milya,
-li.swish:hover ~ li.creditsuisse,
-li.swish:hover ~ li.posters {
-  opacity: 0;
-  display: none; }
-
-li.creditsuisse:hover ~ li.milya,
-li.creditsussie:hover ~ li.swish,
-li.creditsuisse:hover ~ li.posters {
-  opacity: 0;
-  display: none; }
-
-li.posters:hover ~ li.milya,
-li.posters:hover ~ li.swish,
-li.posters:hover ~ li.creditsuisse {
-  opacity: 0;
-  display: none; }
-
-li.posters:hover + li.milya {
-  opacity: 0;
-  display: none; }
-
-html {
+body {
+  background: #F7F7F7;
   margin: 0;
   padding: 0; }
 
-body {
-  background: #F7F7F7; }
-
 content {
   padding: 0;
-  margin: 1em;
+  margin: 1em 1em 1em 1em;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  max-width: 1440px; }
 
 article {
   padding: 0;
@@ -155,10 +95,24 @@ nav {
 section.info {
   display: flex;
   width: 100%;
-  margin: 0;
+  margin: 4em 0 8em 0;
   padding: 4em 0 4em 0;
-  width: 100%;
+  max-width: 1000px;
   flex-direction: column; }
+  @media (max-width: 599px) {
+    section.info {
+      margin: 0 0 4em 0; } }
+
+article.footer {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #3E3535; }
+  @media (max-width: 599px) {
+    article.footer {
+      flex-direction: column; } }
+  article.footer aside.footer-link {
+    max-width: 333px;
+    margin-right: 35px; }
 
 ul.projects {
   list-style: none;
@@ -177,7 +131,7 @@ ul.projects {
   transition: .25s;
   pointer-events: none; }
 
-html {
+body {
   font-family: 'Inter UI', sans-serif; }
 
 a.logo, a.blog {
@@ -207,7 +161,7 @@ b.info {
   color: #3E3535; }
   @media (max-width: 599px) {
     b.info {
-      font-size: 1.5em;
+      font-size: 1.4em;
       width: 100%; } }
 
 p {
@@ -225,67 +179,193 @@ a.elsewhere:hover {
   color: #FF3769;
   transition-duration: 0.2s; }
 
-a.project-list {
-  font-family: 'Inter UI', sans-serif;
-  font-size: 8em;
-  text-decoration: none;
-  font-weight: 100;
-  color: #0011FF; }
-  @media (max-width: 599px) {
-    a.project-list {
-      font-size: 3em; } }
+body {
+  font-family: 'Inter UI', sans-serif; }
 
-a.project-list:hover {
-  color: #FFFFFF;
+a.logo, a.blog {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 0.8em;
+  color: #3E3535;
+  letter-spacing: 1.2px; }
+
+a.blog {
+  padding: 0px 7.5px 0px 7.5px; }
+
+a.logo:hover, a.blog:hover, a.projects:hover {
+  color: #FF3769;
   transition-duration: 0.2s; }
 
-li.milya, li.swish {
-  width: min-content;
-  display: block;
-  opacity: 1; }
+ul {
+  font-size: 0.8em;
+  list-style: none;
+  padding: 0; }
 
-li.creditsuisse, li.posters {
-  width: max-content;
-  opacity: 1; }
+b.info {
+  width: 80%;
+  font-weight: 400;
+  font-size: 2.5em;
+  color: #3E3535; }
+  @media (max-width: 599px) {
+    b.info {
+      font-size: 1.4em;
+      width: 100%; } }
 
-li.milya:hover ~ .bg {
-  background: #422FFA; }
+p {
+  font-size: 18px; }
 
-li.swish:hover ~ .bg {
-  background: #FFBB41; }
+a.elsewhere {
+  font-size: 1em;
+  font-family: 'Roboto Mono', monospace;
+  list-style: none;
+  padding-right: 0.2em;
+  color: #0011FF;
+  text-decoration: none; }
 
-li.creditsuisse:hover ~ .bg {
-  background: #172F5B; }
+a.elsewhere:hover {
+  color: #FF3769;
+  transition-duration: 0.2s; }
 
-li.posters:hover ~ .bg {
-  background: #262626; }
+body {
+  font-family: 'Inter UI', sans-serif; }
 
-li.milya:hover ~ li.swish,
-li.milya:hover ~ li.creditsuisse,
-li.milya:hover ~ li.posters {
-  opacity: 0;
-  display: none; }
+a.logo, a.blog {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 0.8em;
+  color: #3E3535;
+  letter-spacing: 1.2px; }
 
-li.swish:hover ~ li.milya,
-li.swish:hover ~ li.creditsuisse,
-li.swish:hover ~ li.posters {
-  opacity: 0;
-  display: none; }
+a.blog {
+  padding: 0px 7.5px 0px 7.5px; }
 
-li.creditsuisse:hover ~ li.milya,
-li.creditsussie:hover ~ li.swish,
-li.creditsuisse:hover ~ li.posters {
-  opacity: 0;
-  display: none; }
+a.logo:hover, a.blog:hover, a.projects:hover {
+  color: #FF3769;
+  transition-duration: 0.2s; }
 
-li.posters:hover ~ li.milya,
-li.posters:hover ~ li.swish,
-li.posters:hover ~ li.creditsuisse {
-  opacity: 0;
-  display: none; }
+ul {
+  font-size: 0.8em;
+  list-style: none;
+  padding: 0; }
 
-li.posters:hover + li.milya {
-  opacity: 0;
-  display: none; }
+b.info {
+  width: 80%;
+  font-weight: 400;
+  font-size: 2.5em;
+  color: #3E3535; }
+  @media (max-width: 599px) {
+    b.info {
+      font-size: 1.4em;
+      width: 100%; } }
+
+p {
+  font-size: 18px; }
+
+a.elsewhere {
+  font-size: 1em;
+  font-family: 'Roboto Mono', monospace;
+  list-style: none;
+  padding-right: 0.2em;
+  color: #0011FF;
+  text-decoration: none; }
+
+a.elsewhere:hover {
+  color: #FF3769;
+  transition-duration: 0.2s; }
+
+body {
+  background: #F7F7F7;
+  margin: 0;
+  padding: 0; }
+
+content {
+  padding: 0;
+  margin: 1em 1em 1em 1em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1440px; }
+
+article {
+  padding: 0;
+  width: 100%; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em; }
+  nav aside.nav-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; }
+    nav aside.nav-left img.logo-img {
+      width: 50%;
+      height: 50%; }
+    nav aside.nav-left img.logo-img:hover {
+      width: 55%;
+      height: 55%;
+      transition-duration: 0.2s; }
+    nav aside.nav-left a {
+      margin: 0 0 0 0;
+      padding: 0 0 0 0; }
+
+section.info {
+  display: flex;
+  width: 100%;
+  margin: 4em 0 8em 0;
+  padding: 4em 0 4em 0;
+  max-width: 1000px;
+  flex-direction: column; }
+  @media (max-width: 599px) {
+    section.info {
+      margin: 0 0 4em 0; } }
+
+article.footer {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #3E3535; }
+  @media (max-width: 599px) {
+    article.footer {
+      flex-direction: column; } }
+  article.footer aside.footer-link {
+    max-width: 333px;
+    margin-right: 35px; }
+
+ul.projects {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 532px; }
+
+.bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: .25s;
+  pointer-events: none; }
+
+section.grid {
+  padding: 1em 1em 1em 1em;
+  display: flex;
+  align-content: flex-start;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  border: 1px solid red; }
+  section.grid aside.project {
+    margin: 2em 0 2em 0;
+    display: flex;
+    flex-direction: column;
+    max-height: 450px;
+    max-width: 580px; }
 
 /*# sourceMappingURL=master.css.map */
