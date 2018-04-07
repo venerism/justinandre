@@ -2,11 +2,8 @@
 @import "typography";
 @import "colours";
 @import "layout";
-
 //------ Project Main Page ---//
-
-
-section.grid{
+section.grid {
   //border: 1px solid red;
   //padding: 1em 1em 1em 1em;
   margin-bottom: 7em;
@@ -16,54 +13,95 @@ section.grid{
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 1440px;
- @include for-phone-only{
-   justify-content: space-between;
- }
- @include for-tablet-portait-up{
-   justify-content: space-around;
- }
- @include for-tablet-landscape-up{
-   justify-content: space-around;
- }
- @include for-desktop{
-   justify-content:space-around;}
+  @include for-phone-only {
+    justify-content: space-between;
+  }
+  @include for-tablet-portait-up {
+    justify-content: space-around;
+  }
+  @include for-tablet-landscape-up {
+    justify-content: space-around;
+  }
+  @include for-desktop {
+    justify-content: space-around;
+  }
 
-      aside.project{
-        //border: 1px solid red;
-          padding: 0 30px 0 30px;
-          margin: 2em 0em 2em 0em;
-          display: flex;
-          flex-direction: column;
-          min-height: 420px;
-          min-width: 640px;
-          @include for-phone-only{
-            min-width: 320px;
-          }
-          @include for-tablet-portait-up{
-            min-width: 500px;
-            margin: 2em 10px 2em 10px;
-            padding: 0 0 0 0;
-          }
+  aside.project {
+    //border: 1px solid red;
+    padding: 0 30px;
+    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 420px;
+    min-width: 640px;
+    @include for-phone-only {
+      min-width: 320px;
+    }
+    @include for-tablet-portait-up {
+      min-width: 500px;
+      margin: 2em 10px;
+      padding: 0;
+    }
+  }
+
+  #swish-background {
+    background-image: url("../img/swish/main.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #milya-background {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #creditsuisse-background{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #movingposters-background {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 
 
-      }
 
-      article.project-description{
-        margin-top: 20px;
-        caption{
-          margin: 0;
-          font-size: 12px;
-          font-weight: normal;
-        }
-        h2{
-          margin: 0;
-          font-size: 22px;
-          font-weight: bolder;
-        }
-        p{
-          font-size: 18px;
-          margin: 0;
-          font-weight: lighter;
-        }
-      }
+  .project-image {
+    //border: 1px solid red;
+    padding: 0;
+    margin: 0;
+    min-width: 640px;
+    min-height: 358px;
+    @include for-phone-only {
+      min-width: 320px;
+      min-height: 220px;
+    }
+    @include for-tablet-portait-up {
+      min-width: 500px;
+      //margin: 2em 10px;
+      padding: 0;
+    }
+  }
+
+
+  article.project-description {
+    margin-top: 20px;
+
+    caption {
+      margin: 0;
+      font-size: 12px;
+      font-weight: normal;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: bolder;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 0;
+      font-weight: lighter;
+    }
+  }
 }
