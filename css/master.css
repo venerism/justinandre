@@ -68,7 +68,6 @@ content {
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 1440px;
-  border: 1px solid red;
   justify-content: center; }
   @media (max-width: 599px) {
     content {
@@ -297,7 +296,6 @@ content {
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 1440px;
-  border: 1px solid red;
   justify-content: center; }
   @media (max-width: 599px) {
     content {
