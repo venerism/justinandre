@@ -35,7 +35,6 @@ article{
 
 
 nav{
-  transition: 0.3s all;
   z-index: 1;
   float:left;
   top:0;
@@ -128,4 +127,18 @@ ul.projects{
   left: 0;
   transition: .25s;
   pointer-events: none;
+}
+
+.scroll-to-top-link{
+  display: none;
+  cursor: pointer;
+  display: block;
+  position:fixed;
+  bottom:25px;
+  right: 25px;
+  z-index: 1;
+  //border: red 1px solid;
+  width: 23px;
+  height: 92px;
+
 }
