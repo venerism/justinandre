@@ -59,7 +59,8 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column; }
 
 content {
   padding: 0;
@@ -78,6 +79,7 @@ article {
   width: 100%; }
 
 nav {
+  max-width: 1440px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -287,7 +289,8 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column; }
 
 content {
   padding: 0;
@@ -306,6 +309,7 @@ article {
   width: 100%; }
 
 nav {
+  max-width: 1440px;
   display: flex;
   justify-content: space-between;
   align-items: center;
