@@ -415,6 +415,7 @@ ul.projects {
   height: 92px; }
 
 section.grid {
+  margin-top: 4em;
   margin-bottom: 7em;
   display: flex;
   align-content: flex-start;
