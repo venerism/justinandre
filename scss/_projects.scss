@@ -14,7 +14,7 @@ section.grid {
   flex-wrap: wrap;
   max-width: 1440px;
   @include for-phone-only {
-    justify-content: space-between;
+    justify-content: center;
   }
   @include for-tablet-portait-up {
     justify-content: space-around;

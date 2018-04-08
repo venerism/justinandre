@@ -8,6 +8,8 @@ body{
   background: $background-grey;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 content{
@@ -17,7 +19,11 @@ content{
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 1440px;
-  //border: 1px solid red;
+  border: 1px solid red;
+  justify-content: center;
+  @include for-phone-only{
+    max-width:100%;
+  }
 }
 
 article{
