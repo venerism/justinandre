@@ -15,7 +15,7 @@ body{
 
 content{
   padding: 0;
-  margin: 1em 1em 1em 1em;
+  margin: 4em 1em 1em 1em;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -32,15 +32,32 @@ article{
   width: 100%;
 }
 
+
+
 nav{
-  max-width: 1440px;
+  transition: 0.3s all;
+  z-index: 1;
+  float:left;
+  top:0;
+  position: fixed;
+  width: 100%;
   //border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1em ;
+  padding:1em 0.5em 1em 0.5em;
+
+  aside.menu{
+    margin-right:1.5em;
+    //border: 1px solid blue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
   aside.nav-left{
+    margin-left: 1em;
+    //border: 1px solid blue;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
