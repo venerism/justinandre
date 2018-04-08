@@ -26,7 +26,7 @@ a.logo:hover, a.blog:hover, a.projects:hover{
 }
 
 ul{
-  font-size: 0.8em;
+  font-size: 1em;
   list-style: none;
   padding: 0;
 }
@@ -51,7 +51,7 @@ a.elsewhere{
   font-family: 'Roboto Mono', monospace;
   list-style: none;
   padding-right: 0.2em;
-  color: $link-active;
+  color: $default-text;
   text-decoration:none;}
 a.elsewhere:hover{
   color:$link-hover;
