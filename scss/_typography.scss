@@ -37,7 +37,7 @@ b.info{
   font-size:2.5em;
   color:$default-text;
   @include for-phone-only{
-    font-size: 1.4em;
+    font-size: 1.6em;
     width: 100%;
   }
 }
