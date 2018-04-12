@@ -59,6 +59,9 @@ blockquote.attention {
   color: #FF3769;
   padding: 0;
   margin: 0; }
+  @media (max-width: 599px) {
+    blockquote.attention {
+      font-size: 1.6em; } }
 
 body {
   background: #F7F7F7;
@@ -221,6 +224,9 @@ blockquote.attention {
   color: #FF3769;
   padding: 0;
   margin: 0; }
+  @media (max-width: 599px) {
+    blockquote.attention {
+      font-size: 1.6em; } }
 
 body {
   font-family: 'Inter UI', sans-serif; }
@@ -275,6 +281,9 @@ blockquote.attention {
   color: #FF3769;
   padding: 0;
   margin: 0; }
+  @media (max-width: 599px) {
+    blockquote.attention {
+      font-size: 1.6em; } }
 
 body {
   font-family: 'Inter UI', sans-serif; }
@@ -329,6 +338,9 @@ blockquote.attention {
   color: #FF3769;
   padding: 0;
   margin: 0; }
+  @media (max-width: 599px) {
+    blockquote.attention {
+      font-size: 1.6em; } }
 
 body {
   background: #F7F7F7;

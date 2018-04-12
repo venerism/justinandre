@@ -63,4 +63,7 @@ blockquote.attention{
   color: $link-hover;
   padding: 0;
   margin: 0;
+  @include for-phone-only{
+    font-size: 1.6em;
+  }
 }
