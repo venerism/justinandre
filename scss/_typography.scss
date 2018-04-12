@@ -57,3 +57,10 @@ a.elsewhere:hover{
   color:$link-hover;
   transition-duration: 0.2s;
 }
+
+blockquote.attention{
+  font-size: 2.5em;
+  color: $link-hover;
+  padding: 0;
+  margin: 0;
+}

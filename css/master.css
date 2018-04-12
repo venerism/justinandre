@@ -54,6 +54,12 @@ a.elsewhere:hover {
   color: #FF3769;
   transition-duration: 0.2s; }
 
+blockquote.attention {
+  font-size: 2.5em;
+  color: #FF3769;
+  padding: 0;
+  margin: 0; }
+
 body {
   background: #F7F7F7;
   margin: 0;
@@ -210,6 +216,12 @@ a.elsewhere:hover {
   color: #FF3769;
   transition-duration: 0.2s; }
 
+blockquote.attention {
+  font-size: 2.5em;
+  color: #FF3769;
+  padding: 0;
+  margin: 0; }
+
 body {
   font-family: 'Inter UI', sans-serif; }
 
@@ -258,6 +270,12 @@ a.elsewhere:hover {
   color: #FF3769;
   transition-duration: 0.2s; }
 
+blockquote.attention {
+  font-size: 2.5em;
+  color: #FF3769;
+  padding: 0;
+  margin: 0; }
+
 body {
   font-family: 'Inter UI', sans-serif; }
 
@@ -305,6 +323,12 @@ a.elsewhere {
 a.elsewhere:hover {
   color: #FF3769;
   transition-duration: 0.2s; }
+
+blockquote.attention {
+  font-size: 2.5em;
+  color: #FF3769;
+  padding: 0;
+  margin: 0; }
 
 body {
   background: #F7F7F7;
