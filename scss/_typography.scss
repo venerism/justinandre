@@ -31,20 +31,7 @@ ul{
   padding: 0;
 }
 
-b.info{
-  width: 80%;
-  font-weight: 400;
-  font-size:2.5em;
-  color:$default-text;
-  @include for-phone-only{
-    font-size: 1.6em;
-    width: 100%;
-  }
-}
 
-p{
-  font-size: 18px;
-}
 
 a.elsewhere{
   font-size: 1em;
@@ -64,6 +51,43 @@ blockquote.attention{
   padding: 0;
   margin: 0;
   @include for-phone-only{
-    font-size: 1.6em;
+    font-size: 1.2em;
   }
+}
+
+// Style Guides //
+
+
+
+// Subhead //
+h1{
+  font-weight: 400;
+  font-size:2.5em;
+  color:$default-text;
+  @include for-phone-only{
+    font-size: 1.2em;
+    width: 100%;
+    line-height: 1.5em;
+  }
+}
+
+
+h2{
+  margin: 0;
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+// Captions //
+caption{
+  margin: 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+// Body //
+p{
+  font-size: 18px;
+  margin: 0;
+  font-weight: lighter;
 }

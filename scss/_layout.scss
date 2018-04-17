@@ -8,9 +8,10 @@ body{
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   flex-wrap:wrap;
+  border: 1px solid blue;
 }
 
 content{
@@ -19,8 +20,8 @@ content{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 1440px;
-  //border: 1px solid red;
+  //max-width: 1440px;
+  border: 1px solid red;
   justify-content: center;
   @include for-phone-only{
     max-width:100%;
@@ -41,6 +42,7 @@ section.info{
   flex-direction: column;
   @include for-phone-only{
     margin: 0 0 4em 0;
+    text-align: left;
   }
 }
 

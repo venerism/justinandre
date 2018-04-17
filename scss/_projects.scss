@@ -2,6 +2,8 @@
 @import "typography";
 @import "colours";
 @import "layout";
+@import "navigation";
+@import "footer";
 
 //------ Project Main Page ---//
 section.grid {
@@ -99,21 +101,6 @@ section.grid {
 
   article.project-description {
     margin-top: 20px;
-    caption {
-      margin: 0;
-      font-size: 12px;
-      font-weight: normal;
-    }
-    h2 {
-      margin: 0;
-      font-size: 22px;
-      font-weight: bolder;
-    }
-    p {
-      font-size: 18px;
-      margin: 0;
-      font-weight: lighter;
-    }
   }
 }
 
@@ -123,7 +110,7 @@ section.grid {
   min-height: 2000px;
 }
 
-// Project Boxes // 
+// Project Boxes //
 section.container{
   display:flex;
   flex-direction: column;
