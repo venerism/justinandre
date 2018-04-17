@@ -2,6 +2,7 @@
 @import "typography";
 @import "colours";
 @import "layout";
+
 //------ Project Main Page ---//
 section.grid {
 
@@ -120,4 +121,14 @@ section.grid {
 .swish-grid{
   //border: 1px solid red;
   min-height: 2000px;
+}
+
+// Project Boxes // 
+section.container{
+  display:flex;
+  flex-direction: column;
+  border: 1px solid red;
+  max-width: 1440px;
+  min-height: 900px;
+  margin-bottom: 100px;
 }
