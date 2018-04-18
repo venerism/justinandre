@@ -30,16 +30,13 @@ section.project-grid{
   height: 350px;
   margin: 0;
   @include for-phone-only{
-    height: 250px;
+    height: 220px;
     }
 }
-
-
 .project-box{
   align-self: start;
   margin: 2em;
 }
-
 .project-info{
   max-width: 580px;
   margin: 1.5em 0 0 0;
@@ -47,6 +44,26 @@ section.project-grid{
 }
 
 #milya-background{
+  background-image: url("/img/milya-placeholder.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#swish-background{
+  background-image: url("/img/milya-placeholder.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#creditsuisse-background{
+  background-image: url("/img/milya-placeholder.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#movingposters-background{
+  background-image: url("/img/milya-placeholder.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#illustrations-background{
   background-image: url("/img/milya-placeholder.png");
   background-size: cover;
   background-repeat: no-repeat;
