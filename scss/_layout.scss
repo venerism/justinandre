@@ -3,16 +3,6 @@
 @import "mixins";
 //----------------------
 
-body{
-  background: $background-grey;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  flex-wrap:wrap;
-  //border: 1px solid blue;
-}
 
 content{
   padding: 0;
