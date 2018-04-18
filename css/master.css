@@ -6,10 +6,12 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300");
 @import url("https://rsms.me/inter/inter-ui.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300");
+@import url("https://rsms.me/inter/inter-ui.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300");
 body {
   font-family: 'Inter UI', sans-serif; }
 
-a.logo, a.blog {
+a.logo, a.blog, xw {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bolder;
@@ -74,6 +76,9 @@ p {
   font-size: 18px;
   margin: 0;
   font-weight: lighter; }
+
+body > header {
+  margin-top: 4.7em; }
 
 content {
   width: 1440px;
@@ -110,7 +115,7 @@ ul.projects {
 body {
   font-family: 'Inter UI', sans-serif; }
 
-a.logo, a.blog {
+a.logo, a.blog, xw {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bolder;
@@ -179,7 +184,7 @@ p {
 body {
   font-family: 'Inter UI', sans-serif; }
 
-a.logo, a.blog {
+a.logo, a.blog, xw {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bolder;
@@ -320,7 +325,7 @@ section.project-grid {
 body {
   font-family: 'Inter UI', sans-serif; }
 
-a.logo, a.blog {
+a.logo, a.blog, xw {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bolder;
@@ -411,6 +416,75 @@ article.footer {
   width: 23px;
   height: 92px; }
 
+body {
+  font-family: 'Inter UI', sans-serif; }
+
+a.logo, a.blog, xw {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 0.8em;
+  color: #3E3535;
+  letter-spacing: 1.2px; }
+
+a.blog {
+  padding: 0px 7.5px 0px 7.5px; }
+
+a.logo:hover, a.blog:hover, a.projects:hover {
+  color: #FF3769;
+  transition-duration: 0.2s; }
+
+ul {
+  font-size: 1em;
+  list-style: none;
+  padding: 0; }
+
+a.elsewhere {
+  font-size: 1em;
+  font-family: 'Roboto Mono', monospace;
+  list-style: none;
+  padding-right: 0.2em;
+  color: #3E3535;
+  text-decoration: none; }
+
+a.elsewhere:hover {
+  color: #FF3769;
+  transition-duration: 0.2s; }
+
+blockquote.attention {
+  font-size: 2.5em;
+  color: #FF3769;
+  padding: 0;
+  margin: 0; }
+  @media (max-width: 599px) {
+    blockquote.attention {
+      font-size: 1.2em; } }
+
+h1 {
+  font-weight: 400;
+  font-size: 2.5em;
+  color: #3E3535; }
+  @media (max-width: 599px) {
+    h1 {
+      font-size: 1.2em;
+      width: 100%;
+      line-height: 1.5em; } }
+
+h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bolder; }
+
+caption {
+  margin: 0;
+  font-size: 12px;
+  font-weight: normal; }
+
+p {
+  font-size: 18px;
+  margin: 0;
+  font-weight: lighter; }
+
 nav {
   z-index: 1;
   float: left;
@@ -420,7 +494,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 0.5em 1em 0.5em; }
+  padding: 1em 0.5em 1em 0.5em;
+  background-color: #F7F7F7;
+  transition: background-color 0.4s ease-out; }
   nav aside.menu {
     margin-right: 1.5em;
     display: flex;
@@ -443,7 +519,12 @@ nav {
       margin: 0 0 0 0;
       padding: 0 0 0 0; }
 
+nav.scroll {
+  background-color: black;
+  color: #eef; }
+
 html {
+  background-color: #F7F7F7;
   margin: 0;
   padding: 0; }
 

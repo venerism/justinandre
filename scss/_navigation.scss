@@ -1,3 +1,5 @@
+@import 'colours';
+@import 'typography';
 nav{
   z-index: 1;
   float:left;
@@ -8,6 +10,8 @@ nav{
   justify-content: space-between;
   align-items: center;
   padding:1em 0.5em 1em 0.5em;
+  background-color: $background-grey;
+  transition: background-color 0.4s ease-out;
 
   aside.menu{
     margin-right:1.5em;
@@ -38,4 +42,9 @@ img.logo-img:hover{
     }
   }
 
+}
+
+nav.scroll {
+  background-color: black;
+  color: #eef;
 }
