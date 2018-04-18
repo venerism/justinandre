@@ -11,3 +11,10 @@
 @mixin for-desktop{
   @media (min-width: 1024px) {@content;}
 }
+
+@mixin retinize($file, $type) {
+	background-image: url($file + "." + $type);
+	@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		background-image: url($file + "@2x." + $type);
+	}
+}
