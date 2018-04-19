@@ -69,7 +69,7 @@ section.project-grid{
 }
 #illustrations-background{
   background-image: url("/img/illustration-placeholder.png");
-  @include retinize("/img/illustration-placeholder","png");
+ //@include retinize("/img/illustration-placeholder","png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

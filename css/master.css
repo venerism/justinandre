@@ -315,13 +315,9 @@ section.project-grid {
 
 #illustrations-background {
   background-image: url("/img/illustration-placeholder.png");
-  background-image: url("/img/illustration-placeholder.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    #illustrations-background {
-      background-image: url("/img/illustration-placeholder@2x.png"); } }
 
 body {
   font-family: 'Inter UI', sans-serif; }
