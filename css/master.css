@@ -315,6 +315,7 @@ section.project-grid {
 
 #illustrations-background {
   background-image: url("/img/illustration-placeholder.png");
+  background-image: url("/img/illustration-placeholder.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
