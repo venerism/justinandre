@@ -8,7 +8,7 @@ section.project-grid{
   max-width: 1440px;
   display:grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-row-gap: 25px;
   grid-column-gap: 20px;
   @include for-phone-only{
