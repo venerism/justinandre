@@ -32,11 +32,8 @@ ul{
   padding: 0;
 }
 
-
-
 a.elsewhere{
   font-size: 1em;
-  font-family: 'Roboto Mono', monospace;
   list-style: none;
   padding-right: 0.2em;
   color: $default-text;
@@ -58,8 +55,6 @@ blockquote.attention{
 
 // Style Guides //
 
-
-
 // Subhead //
 h1{
   font-weight: 400;
@@ -71,7 +66,6 @@ h1{
     line-height: 1.5em;
   }
 }
-
 
 h2{
   margin: 0;

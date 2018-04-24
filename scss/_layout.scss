@@ -16,13 +16,11 @@ content{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  //border: 1px solid red;
   justify-content: center;
   @include for-phone-only{
     max-width:100%;
   }
 }
-
 
 section.info{
   display: flex;
@@ -36,7 +34,6 @@ section.info{
     text-align: left;
   }
 }
-
 
 ul.projects{
   list-style: none;
