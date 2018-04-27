@@ -76,18 +76,57 @@ section.project-grid{
 }
 
 
+//--Case Study Layouts--//
+
+article.casestudy-header{
+  //border-bottom: $default-text 1px solid;
+  height: 150px;
+  width:100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  @include for-phone-only{
+    grid-template-columns: 1fr;
+
+  }
+}
+
+aside.casestudy-title{
+  height:200px;
+  width:695px;
+  //border: 1px solid green;
+}
+aside.casestudy-description{
+  height:250px;
+  width: 695px;
+  //border: 1px solid blue;
+}
+
+
 //----- Illustrations Grid ---- //
 
 section.illustration-grid{
+  //border: 1px solid red;
   display:grid;
-  margin: 4em 0 4em 0;
-  width: 1440px;
+  margin: 10em 0 4em 0;
   max-width: 1440px;
   min-height:840px;
   grid-column-gap: 50px;
   grid-row-gap: 50px;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  grid-template-areas:
+  "cs_header cs_header"
+  "splash splash"
+  "idtheft_grid1 esports_grid1"
+  "idtheft_grid2 esports_grid1"
+  "esports_grid2 esports_grid3"
+  "legup_grid legup_grid"
+  "editorial_grid editorial_grid"
+  "password_grid1 password_grid2"
+  "password_grid3 password_grid4";
   @include for-phone-only{
+    margin: 4em 0 4em 0;
     grid-template-columns: 1fr;
     grid-row-gap: 40px;
     }
@@ -100,18 +139,160 @@ section.illustration-grid{
     grid-row-gap: 40px;
   }
     article.illustration-front{
+      border: 1px solid green;
       width: 100%;
       height: 840px;
+      @include for-phone-only{
+        max-height: 50%;
+      }
+      @include for-tablet-portait-up{
+        max-height: 70%;
+      }
     }
 
-    //---Illustrations images --//
-    #illustration-front{
-      background-image: url("../img/illustrations/illustration-front.png");
-      background-size: cover;
-      background-repeat: no-repeat;
+    //--Illustration backgrounds & Images--//
+    article.illustration-splash{
+    background-image: url(../img/illustrations/illustration-splash2.png);
+    background-size: 50%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    min-width:1440px;
+    min-height:600px;
+    background-color: $illustration-splash;
+    }
+    article.idtheft1{
+    background-image: url(../img/illustrations/idtheft-guy.png);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 695px;
+    min-height: 600px;
+    background-color: $illustration-pink;
+    }
+    article.idtheft2{
+    background-image: url(../img/illustrations/idtheft-girl.png);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width:695px;
+    min-height: 600px;
+    background-color: $illustration-blue;
+    }
+    article.esports1{
+    background-image: url(../img/illustrations/esports-1.png);
+    background-size: 70%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    min-width: 695px;
+    min-height:1225px;
+    background-color: $illustration-navy;
+    }
+    article.esports2{
+    background-size: 50%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    min-width: 455px;
+    min-height:600px;
+    background-color: $illustration-navy;
+    }
+    article.esports-bk1{
+    background-image: url(../img/illustrations/esports-2.png);
+    }
+    article.esports-bk2{
+    background-image:url(../img/illustrations/esports-3.png);
+    }
+
+
+    article.legup{
+    background-image: url(../img/illustrations/legup.png);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 1440px;
+    min-height: 800px;
+    background-color: $illustration-blue;
+    }
+    article.editorial{
+    background-image: url(../img/illustrations/editorial.png);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 1440px;
+    min-height: 800px;
+    background-color: $illustration-salmon;
+    }
+    article.password{
+    min-width:695px;
+    min-height:600px;
+    background-color: $password-blue;
+    }
+
+    article.password-bk1{
+      background-size: 60%;
       background-position: center;
+      background-repeat: no-repeat;
+      background-image: url(../img/illustrations/password1.png);
+    }
+    article.password-bk2{
+      background-size: 60%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url(../img/illustrations/password2.png);
+    }
+    article.password-bk3{
+      background-size: 60%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url(../img/illustrations/password3.png);
+    }
+    article.password-bk4{
+      background-size: 40%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url(../img/illustrations/password4.png);
     }
 
-
-
+//--Illustration Grid Areas--//
+article.cs-header-grid{
+  grid-area:cs_header;
+}
+article.splash{
+  grid-area:splash;
+}
+article.idtheft-grid1{
+  grid-area:idtheft_grid1;
+}
+article.idtheft-grid2{
+  grid-area:idtheft_grid2;
+}
+article.esports-grid1{
+  grid-area:esports_grid1;
+}
+article.esports-grid2{
+  grid-area:esports_grid2;
+}
+article.esports-grid3{
+  grid-area:esports_grid3;
+}
+article.esports-grid4{
+  grid-area:esports_grid4;
+}
+article.legup-grid{
+  grid-area:legup_grid;
+}
+article.editorial-grid{
+  grid-area:editorial_grid;
+}
+article.password-grid1{
+  grid-area:password_grid1;
+}
+article.password-grid2{
+  grid-area:password_grid2;
+}
+article.password-grid3{
+  grid-area:password_grid3;
+}
+article.password-grid4{
+  grid-area:password_grid4;
+}
 }

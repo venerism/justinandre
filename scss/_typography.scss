@@ -57,6 +57,7 @@ blockquote.attention{
 
 // Subhead //
 h1{
+
   font-weight: 400;
   font-size:2.5em;
   color:$default-text;
@@ -71,6 +72,12 @@ h2{
   margin: 0;
   font-size: 22px;
   font-weight: bolder;
+}
+
+h3{
+  margin: 0;
+  font-size:64px;
+  font-weight:lighter;
 }
 
 // Captions //

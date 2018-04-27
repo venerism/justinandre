@@ -66,6 +66,11 @@ h2 {
   font-size: 22px;
   font-weight: bolder; }
 
+h3 {
+  margin: 0;
+  font-size: 64px;
+  font-weight: lighter; }
+
 caption {
   margin: 0;
   font-size: 12px;
@@ -169,6 +174,11 @@ h2 {
   font-size: 22px;
   font-weight: bolder; }
 
+h3 {
+  margin: 0;
+  font-size: 64px;
+  font-weight: lighter; }
+
 caption {
   margin: 0;
   font-size: 12px;
@@ -236,6 +246,11 @@ h2 {
   margin: 0;
   font-size: 22px;
   font-weight: bolder; }
+
+h3 {
+  margin: 0;
+  font-size: 64px;
+  font-weight: lighter; }
 
 caption {
   margin: 0;
@@ -316,17 +331,37 @@ section.project-grid {
   background-repeat: no-repeat;
   background-position: center; }
 
+article.casestudy-header {
+  height: 150px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch; }
+  @media (max-width: 599px) {
+    article.casestudy-header {
+      grid-template-columns: 1fr; } }
+
+aside.casestudy-title {
+  height: 200px;
+  width: 695px; }
+
+aside.casestudy-description {
+  height: 250px;
+  width: 695px; }
+
 section.illustration-grid {
   display: grid;
-  margin: 4em 0 4em 0;
-  width: 1440px;
+  margin: 10em 0 4em 0;
   max-width: 1440px;
   min-height: 840px;
   grid-column-gap: 50px;
   grid-row-gap: 50px;
-  grid-template-columns: 1fr; }
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  grid-template-areas: "cs_header cs_header" "splash splash" "idtheft_grid1 esports_grid1" "idtheft_grid2 esports_grid1" "esports_grid2 esports_grid3" "legup_grid legup_grid" "editorial_grid editorial_grid" "password_grid1 password_grid2" "password_grid3 password_grid4"; }
   @media (max-width: 599px) {
     section.illustration-grid {
+      margin: 4em 0 4em 0;
       grid-template-columns: 1fr;
       grid-row-gap: 40px; } }
   @media (max-width: 600px) {
@@ -338,13 +373,126 @@ section.illustration-grid {
       grid-template-columns: 1fr;
       grid-row-gap: 40px; } }
   section.illustration-grid article.illustration-front {
+    border: 1px solid green;
     width: 100%;
     height: 840px; }
-  section.illustration-grid #illustration-front {
-    background-image: url("../img/illustrations/illustration-front.png");
-    background-size: cover;
+    @media (max-width: 599px) {
+      section.illustration-grid article.illustration-front {
+        max-height: 50%; } }
+    @media (max-width: 600px) {
+      section.illustration-grid article.illustration-front {
+        max-height: 70%; } }
+  section.illustration-grid article.illustration-splash {
+    background-image: url(../img/illustrations/illustration-splash2.png);
+    background-size: 50%;
+    background-position: center bottom;
     background-repeat: no-repeat;
-    background-position: center; }
+    min-width: 1440px;
+    min-height: 600px;
+    background-color: #FBB932; }
+  section.illustration-grid article.idtheft1 {
+    background-image: url(../img/illustrations/idtheft-guy.png);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 695px;
+    min-height: 600px;
+    background-color: #FDE3E5; }
+  section.illustration-grid article.idtheft2 {
+    background-image: url(../img/illustrations/idtheft-girl.png);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 695px;
+    min-height: 600px;
+    background-color: #F2FAFF; }
+  section.illustration-grid article.esports1 {
+    background-image: url(../img/illustrations/esports-1.png);
+    background-size: 70%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    min-width: 695px;
+    min-height: 1225px;
+    background-color: #080150; }
+  section.illustration-grid article.esports2 {
+    background-size: 50%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    min-width: 455px;
+    min-height: 600px;
+    background-color: #080150; }
+  section.illustration-grid article.esports-bk1 {
+    background-image: url(../img/illustrations/esports-2.png); }
+  section.illustration-grid article.esports-bk2 {
+    background-image: url(../img/illustrations/esports-3.png); }
+  section.illustration-grid article.legup {
+    background-image: url(../img/illustrations/legup.png);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 1440px;
+    min-height: 800px;
+    background-color: #F2FAFF; }
+  section.illustration-grid article.editorial {
+    background-image: url(../img/illustrations/editorial.png);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 1440px;
+    min-height: 800px;
+    background-color: #FDE9E9; }
+  section.illustration-grid article.password {
+    min-width: 695px;
+    min-height: 600px;
+    background-color: #1989F9; }
+  section.illustration-grid article.password-bk1 {
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/illustrations/password1.png); }
+  section.illustration-grid article.password-bk2 {
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/illustrations/password2.png); }
+  section.illustration-grid article.password-bk3 {
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/illustrations/password3.png); }
+  section.illustration-grid article.password-bk4 {
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/illustrations/password4.png); }
+  section.illustration-grid article.cs-header-grid {
+    grid-area: cs_header; }
+  section.illustration-grid article.splash {
+    grid-area: splash; }
+  section.illustration-grid article.idtheft-grid1 {
+    grid-area: idtheft_grid1; }
+  section.illustration-grid article.idtheft-grid2 {
+    grid-area: idtheft_grid2; }
+  section.illustration-grid article.esports-grid1 {
+    grid-area: esports_grid1; }
+  section.illustration-grid article.esports-grid2 {
+    grid-area: esports_grid2; }
+  section.illustration-grid article.esports-grid3 {
+    grid-area: esports_grid3; }
+  section.illustration-grid article.esports-grid4 {
+    grid-area: esports_grid4; }
+  section.illustration-grid article.legup-grid {
+    grid-area: legup_grid; }
+  section.illustration-grid article.editorial-grid {
+    grid-area: editorial_grid; }
+  section.illustration-grid article.password-grid1 {
+    grid-area: password_grid1; }
+  section.illustration-grid article.password-grid2 {
+    grid-area: password_grid2; }
+  section.illustration-grid article.password-grid3 {
+    grid-area: password_grid3; }
+  section.illustration-grid article.password-grid4 {
+    grid-area: password_grid4; }
 
 body {
   font-family: 'Inter UI', sans-serif; }
@@ -403,6 +551,11 @@ h2 {
   margin: 0;
   font-size: 22px;
   font-weight: bolder; }
+
+h3 {
+  margin: 0;
+  font-size: 64px;
+  font-weight: lighter; }
 
 caption {
   margin: 0;
@@ -496,6 +649,11 @@ h2 {
   margin: 0;
   font-size: 22px;
   font-weight: bolder; }
+
+h3 {
+  margin: 0;
+  font-size: 64px;
+  font-weight: lighter; }
 
 caption {
   margin: 0;
