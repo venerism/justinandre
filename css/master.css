@@ -334,19 +334,16 @@ section.project-grid {
 article.casestudy-header {
   height: 150px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: stretch; }
+  grid-template-columns: 1fr 1fr; }
   @media (max-width: 599px) {
     article.casestudy-header {
       grid-template-columns: 1fr; } }
 
 aside.casestudy-title {
-  height: 200px;
-  width: 695px; }
+  height: 200px; }
 
 aside.casestudy-description {
-  height: 250px;
-  width: 695px; }
+  height: 250px; }
 
 section.illustration-grid {
   display: grid;

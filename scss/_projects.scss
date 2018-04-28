@@ -84,7 +84,7 @@ article.casestudy-header{
   //width:100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: stretch;
+  //align-items: stretch;
   @include for-phone-only{
     grid-template-columns: 1fr;
 
@@ -93,12 +93,12 @@ article.casestudy-header{
 
 aside.casestudy-title{
   height:200px;
-  width:695px;
+  //width:695px;
   //border: 1px solid green;
 }
 aside.casestudy-description{
   height:250px;
-  width: 695px;
+  //width: 695px;
   //border: 1px solid blue;
 }
 
