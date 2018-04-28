@@ -126,12 +126,12 @@ section.illustration-grid{
   "password_grid3 password_grid4";
   @include for-phone-only{
     margin: 4em 0 4em 0;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-row-gap: 50px;
     grid-template-areas:
-    "cs_header cs_header"
-    "splash splash"
-    "idtheft_grid1 idtheft_grid1"
+    "cs_header"
+    "splash"
+    ". idtheft_grid1 ."
     "idtheft_grid2 idtheft_grid2"
     "esports_grid1 esports_grid1"
     "esports_grid2 esports_grid2"
@@ -168,7 +168,7 @@ section.illustration-grid{
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
-    //min-width:1440px;
+    max-width:1440px;
     min-height:600px;
     background-color: $illustration-splash;
     @include for-phone-only{
@@ -180,7 +180,7 @@ section.illustration-grid{
     background-size: 50%;
     background-position: center;
     background-repeat: no-repeat;
-    //min-width: 695px;
+    max-width: 695px;
     min-height: 600px;
     background-color: $illustration-pink;
     }
@@ -189,7 +189,7 @@ section.illustration-grid{
     background-size: 50%;
     background-position: center;
     background-repeat: no-repeat;
-    //min-width:695px;
+    max-width:695px;
     min-height: 600px;
     background-color: $illustration-blue;
     }
@@ -198,7 +198,7 @@ section.illustration-grid{
     background-size: 70%;
     background-position: center bottom;
     background-repeat: no-repeat;
-    //min-width: 695px;
+    max-width: 695px;
     min-height:1225px;
     background-color: $illustration-navy;
     }
@@ -206,7 +206,7 @@ section.illustration-grid{
     background-size: 50%;
     background-position: center bottom;
     background-repeat: no-repeat;
-    //min-width: 455px;
+    max-width: 455px;
     min-height:600px;
     background-color: $illustration-navy;
     }
@@ -223,7 +223,7 @@ section.illustration-grid{
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
-    min-width: 1440px;
+    max-width: 1440px;
     min-height: 800px;
     background-color: $illustration-blue;
     }
@@ -232,12 +232,12 @@ section.illustration-grid{
     background-size: 90%;
     background-position: center;
     background-repeat: no-repeat;
-    min-width: 1440px;
+    max-width: 1440px;
     min-height: 800px;
     background-color: $illustration-salmon;
     }
     article.password{
-    min-width:695px;
+    max-width:695px;
     min-height:600px;
     background-color: $password-blue;
     }
