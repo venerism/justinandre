@@ -332,30 +332,33 @@ section.project-grid {
   background-position: center; }
 
 article.casestudy-header {
+  border: 1px solid red;
   display: grid;
   grid-template-columns: 3fr 4fr;
   grid-gap: 50px;
   grid-template-areas: "casestudy_title casestudy_description"; }
   @media (max-width: 599px) {
     article.casestudy-header {
-      grid-gap: 10px;
+      grid-gap: 5px;
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr 3fr;
       grid-template-areas: "casestudy_title" "casestudy_description"; } }
   @media (max-width: 600px) {
     article.casestudy-header {
-      grid-gap: 10px;
+      grid-gap: 5px;
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
       grid-template-areas: "casestudy_title" "casestudy_description"; } }
 
 aside.casestudy-title {
+  border: 1px solid blue;
   grid-area: casestudy_title; }
 
 aside.casestudy-description {
+  border: 1px solid blue;
   grid-area: casestudy_description; }
 
 section.illustration-grid {
+  border: 1px solid red;
   display: grid;
   margin: 10em 0 4em 0;
   max-width: 1400px;
@@ -369,12 +372,13 @@ section.illustration-grid {
     section.illustration-grid {
       margin: 4em 0 4em 0;
       grid-template-columns: 1fr;
-      grid-row-gap: 50px;
-      grid-template-areas: "cs_header" "splash" "idtheft_grid1" "idtheft_grid2 idtheft_grid2" "esports_grid1 esports_grid1" "esports_grid2 esports_grid2" "legup_grid legup_grid" "editorial_grid editorial_grid" "password_grid1 password_grid2" "password_grid3 password_grid4"; } }
+      grid-row-gap: 20px;
+      grid-template-areas: "cs_header" "splash" "idtheft_grid1" "idtheft_grid2" "esports_grid1" "esports_grid2" "esports-grid3" "legup_grid" "editorial_grid" "password_grid1" " password_grid2" "password_grid3" "password_grid4"; } }
   @media (max-width: 600px) {
     section.illustration-grid {
       grid-template-columns: 1fr;
-      grid-row-gap: 40px; } }
+      grid-row-gap: 40px;
+      grid-column-gap: 0px; } }
   @media (max-width: 900px) {
     section.illustration-grid {
       grid-template-columns: 1fr;
@@ -404,7 +408,7 @@ section.illustration-grid {
     background-color: #FBB932; }
   section.illustration-grid article.idtheft1 {
     background-image: url(../img/illustrations/idtheft-guy.png);
-    background-size: 60%;
+    background-size: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #FDE3E5; }
@@ -419,7 +423,6 @@ section.illustration-grid {
     background-size: 70%;
     background-position: center bottom;
     background-repeat: no-repeat;
-    min-height: 1225px;
     background-color: #080150; }
   section.illustration-grid article.esports2 {
     background-size: 50%;
