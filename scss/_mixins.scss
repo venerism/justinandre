@@ -11,6 +11,10 @@
 @mixin for-desktop{
   @media (min-width: 1024px) {@content;}
 }
+@mixin for-hd-desktop{
+  @media (max-width: 1400px) {@content;}
+}
+
 
 @mixin retinize($file, $type) {
 	background-image: url($file + "." + $type);
