@@ -305,10 +305,14 @@ section.illustration-grid{
     //max-width: 1440px;
     min-height: 800px;
     background-color: $illustration-salmon;
+    @include for-phone-only{
+      background-size: 80%;
+      max-height: 500px;
+    }
     }
     article.password{
     max-width:695px;
-    min-height:600px;
+    min-height:400px;
     background-color: $password-blue;
     }
 

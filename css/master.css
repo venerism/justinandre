@@ -467,9 +467,13 @@ section.illustration-grid {
     background-repeat: no-repeat;
     min-height: 800px;
     background-color: #FDE9E9; }
+    @media (max-width: 599px) {
+      section.illustration-grid article.editorial {
+        background-size: 80%;
+        max-height: 500px; } }
   section.illustration-grid article.password {
     max-width: 695px;
-    min-height: 600px;
+    min-height: 400px;
     background-color: #1989F9; }
   section.illustration-grid article.password-bk1 {
     background-size: 60%;
