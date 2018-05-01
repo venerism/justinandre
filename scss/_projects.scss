@@ -215,7 +215,13 @@ section.illustration-grid{
     background-position: center;
     background-repeat: no-repeat;
     background-color: $illustration-pink;
+    //opacity: 0;
     }
+
+    // .idtheft.show{
+    // opacity:1;
+    // }
+
     article.idtheft2{
     background-image: url(../img/illustrations/idtheft-girl.png);
     background-size: 60%;
@@ -344,35 +350,4 @@ article.password-grid3{
 article.password-grid4{
   grid-area:password_grid4;
 }
-}
-
-
-
-//--- Swish Grid --- //
-section.swish-grid{
-  display:grid;
-  margin: 10em 0 4em 0;
-  max-width: 1400px;
-}
-section.swish-title{
-  display:grid;
-  grid-template-columns: 3fr 1fr 1fr;
-  grid-column-gap: 50px;
-  @include for-phone-only{
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    "swish_header swish_header"
-    "swish_description1 swish_description2"
-    ;
-  }
-}
-aside.swish-header{
-  grid-area:swish_header;
-}
-aside.swish-description1{
-  grid-area:swish_description1;
-}
-aside.swish-description2{
-  grid-area:swish_description12;
 }

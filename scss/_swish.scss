@@ -1,0 +1,102 @@
+@import 'colours';
+@import 'mixins';
+@import 'typography';
+@import 'projects';
+
+
+section.swish-grid{
+  display:grid;
+  margin: 10em 0 4em 0;
+  max-width: 1400px;
+  grid-row-gap: 40px;
+  grid-template-columns:1fr 1fr 1fr;
+  justify-items: stretch;
+  grid-template-rows: 120px 800px 440px 700px;
+  grid-template-areas:
+  "swish_header swish_header swish_header"
+  "swish_splash swish_splash swish_splash"
+  ". swish_quote swish_quote"
+  "swish_screen1 swish_wishlist swish_delivery"
+  ;
+  @include for-phone-only{
+    margin: 2em 0 4em 0;
+    grid-gap:40px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 400px 300px 500px 500px 500px;
+    grid-template-areas:
+    "swish_header "
+    "swish_splash"
+    "swish_quote"
+    "swish_screen1"
+    "swish_wishlist"
+    "swish_delivery"
+    ;
+  }
+
+
+  @include for-hd-desktop{
+    margin: 10em 2.5em 4em 2.5em;
+  }
+
+
+.swish-header{
+  grid-area:swish_header;
+  //border:1px solid black;
+  display:grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap:50px;
+  @include for-phone-only{
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    grid-template-rows: 70px 70px 70px;
+  }
+
+}
+
+aside.swish-title{
+//grid-area:swish_title;
+}
+aside.swish-details{
+//grid-area:swish_details;
+}
+
+.swish-splash{
+  grid-area:swish_splash;
+  background-image:url(../img/swish/swish-splash.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+article.swish-quote{
+  grid-area:swish_quote;
+  align-self: center;
+}
+
+.swish-screen1{
+  grid-area:swish_screen1;
+  background-image:url(../img/swish/swish-screen1.png);
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $background-grey;
+}
+
+.swish-wishlist{
+  grid-area:swish_wishlist;
+  background-image:url(../img/swish/swish-wishlist1.png);
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+    background-color: $background-grey;
+}
+.swish-delivery{
+  grid-area:swish_delivery;
+  background-image:url(../img/swish/swish-delivery.png);
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+    background-color: $background-grey;
+}
+
+}
