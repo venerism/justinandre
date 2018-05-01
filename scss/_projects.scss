@@ -1,6 +1,7 @@
 @import 'colours';
 @import 'mixins';
 @import 'typography';
+@import 'layout';
 
 section.project-grid{
   margin: 4em 0 4em 0;
@@ -126,12 +127,11 @@ grid-area:casestudy_description;
 section.illustration-grid{
   //border: 1px solid red;
   display:grid;
-  margin: 10em 0 4em 0;
+  margin: 7em 0 4em 0;
   max-width: 1400px;
-  grid-column-gap: 50px;
-  grid-row-gap: 50px;
+  grid-gap: 40px;
   grid-template-columns:1fr 1fr;
-  grid-template-rows: 200px 800px 600px 800px 600px 800px 800px 500px 500px;
+  grid-template-rows: 120px 800px 600px 800px 600px 800px 800px 500px 500px;
   justify-items: stretch;
   align-items: stretch;
   grid-template-areas:

@@ -9,14 +9,16 @@ body > header {
 }
 
 content{
+  //border: 1px solid red;
   width: 1440px;
   max-width: 1440px;
   padding: 0;
-  margin: 4em 1em 1em 1em;
+  margin: 4em .5em 1em .5em;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   @include for-phone-only{
     max-width:100%;
   }
