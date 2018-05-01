@@ -1,13 +1,7 @@
 var controller = new ScrollMagic.Controller();
 
 var scene = new ScrollMagic.Scene({
-  triggerElement:".class"
+  triggerElement:'.idtheft1'
 })
-.setClassToggle('.class','show')
-.addTo(controller);
-
-var scene = new ScrollMagic.Scene({
-  triggerElement:".class2"
-})
-.setClassToggle('.class2'.'show')
-.addTo(controller);
+.setClassToggle('.idtheft1','show')
+.addTo(controller)
