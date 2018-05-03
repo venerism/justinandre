@@ -3,7 +3,14 @@
 @import 'typography';
 @import 'layout';
 
-section.project-grid{
+// section.project-temp{
+//   border: 1px solid red;
+//   display: flex;
+//   flex-direction: row;
+//
+// }
+
+.project-grid{
   margin: 4em 0 4em 0;
   width: 1400px;
   max-width: 1400px;
@@ -26,7 +33,7 @@ section.project-grid{
   }
 }
 
-.project-image{
+aside.project-image{
   background-color: $place-holder;
   height: 350px;
   margin: 0;
@@ -38,7 +45,7 @@ section.project-grid{
   align-self: start;
   margin: 2em;
 }
-.project-info{
+article.project-info{
   max-width: 580px;
   margin: 1.5em 0 0 0;
   line-height: 22px;

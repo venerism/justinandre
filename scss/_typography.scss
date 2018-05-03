@@ -8,7 +8,7 @@ body{
 font-family: 'Inter UI', sans-serif;
 }
 
-a.logo, a.blog,xw{
+a.logo, a.blog{
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bolder;
@@ -17,6 +17,17 @@ a.logo, a.blog,xw{
   letter-spacing: 1.2px;
 }
 
+
+a.temporary{
+  font-size: 2em;
+  cursor: pointer;
+  font-weight: lighter;
+  color: $milya;
+  text-decoration: none;
+}
+a.temporary:hover,{
+  color:$link-hover;
+}
 
 a.blog{
   padding: 0px 7.5px 0px 7.5px;

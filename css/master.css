@@ -21,13 +21,23 @@
 body {
   font-family: 'Inter UI', sans-serif; }
 
-a.logo, a.blog, xw {
+a.logo, a.blog {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bolder;
   font-size: 0.8em;
   color: #3E3535;
   letter-spacing: 1.2px; }
+
+a.temporary {
+  font-size: 2em;
+  cursor: pointer;
+  font-weight: lighter;
+  color: #422FFA;
+  text-decoration: none; }
+
+a.temporary:hover {
+  color: #FF3769; }
 
 a.blog {
   padding: 0px 7.5px 0px 7.5px; }
@@ -129,13 +139,23 @@ ul.projects {
 body {
   font-family: 'Inter UI', sans-serif; }
 
-a.logo, a.blog, xw {
+a.logo, a.blog {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bolder;
   font-size: 0.8em;
   color: #3E3535;
   letter-spacing: 1.2px; }
+
+a.temporary {
+  font-size: 2em;
+  cursor: pointer;
+  font-weight: lighter;
+  color: #422FFA;
+  text-decoration: none; }
+
+a.temporary:hover {
+  color: #FF3769; }
 
 a.blog {
   padding: 0px 7.5px 0px 7.5px; }
@@ -202,13 +222,23 @@ p {
 body {
   font-family: 'Inter UI', sans-serif; }
 
-a.logo, a.blog, xw {
+a.logo, a.blog {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bolder;
   font-size: 0.8em;
   color: #3E3535;
   letter-spacing: 1.2px; }
+
+a.temporary {
+  font-size: 2em;
+  cursor: pointer;
+  font-weight: lighter;
+  color: #422FFA;
+  text-decoration: none; }
+
+a.temporary:hover {
+  color: #FF3769; }
 
 a.blog {
   padding: 0px 7.5px 0px 7.5px; }
@@ -275,13 +305,23 @@ p {
 body {
   font-family: 'Inter UI', sans-serif; }
 
-a.logo, a.blog, xw {
+a.logo, a.blog {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bolder;
   font-size: 0.8em;
   color: #3E3535;
   letter-spacing: 1.2px; }
+
+a.temporary {
+  font-size: 2em;
+  cursor: pointer;
+  font-weight: lighter;
+  color: #422FFA;
+  text-decoration: none; }
+
+a.temporary:hover {
+  color: #FF3769; }
 
 a.blog {
   padding: 0px 7.5px 0px 7.5px; }
@@ -380,7 +420,7 @@ ul.projects {
   overflow: hidden;
   min-height: 532px; }
 
-section.project-grid {
+.project-grid {
   margin: 4em 0 4em 0;
   width: 1400px;
   max-width: 1400px;
@@ -390,31 +430,31 @@ section.project-grid {
   grid-row-gap: 25px;
   grid-column-gap: 20px; }
   @media (max-width: 599px) {
-    section.project-grid {
+    .project-grid {
       grid-template-columns: 1fr;
       grid-row-gap: 40px; } }
   @media (max-width: 600px) {
-    section.project-grid {
+    .project-grid {
       grid-template-columns: 1fr;
       grid-row-gap: 40px; } }
   @media (max-width: 900px) {
-    section.project-grid {
+    .project-grid {
       grid-template-columns: 1fr;
       grid-row-gap: 40px; } }
 
-.project-image {
+aside.project-image {
   background-color: #EBEBEB;
   height: 350px;
   margin: 0; }
   @media (max-width: 599px) {
-    .project-image {
+    aside.project-image {
       height: 220px; } }
 
 .project-box {
   align-self: start;
   margin: 2em; }
 
-.project-info {
+article.project-info {
   max-width: 580px;
   margin: 1.5em 0 0 0;
   line-height: 22px; }
@@ -621,13 +661,23 @@ section.illustration-grid {
 body {
   font-family: 'Inter UI', sans-serif; }
 
-a.logo, a.blog, xw {
+a.logo, a.blog {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bolder;
   font-size: 0.8em;
   color: #3E3535;
   letter-spacing: 1.2px; }
+
+a.temporary {
+  font-size: 2em;
+  cursor: pointer;
+  font-weight: lighter;
+  color: #422FFA;
+  text-decoration: none; }
+
+a.temporary:hover {
+  color: #FF3769; }
 
 a.blog {
   padding: 0px 7.5px 0px 7.5px; }
@@ -719,13 +769,23 @@ article.footer {
 body {
   font-family: 'Inter UI', sans-serif; }
 
-a.logo, a.blog, xw {
+a.logo, a.blog {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bolder;
   font-size: 0.8em;
   color: #3E3535;
   letter-spacing: 1.2px; }
+
+a.temporary {
+  font-size: 2em;
+  cursor: pointer;
+  font-weight: lighter;
+  color: #422FFA;
+  text-decoration: none; }
+
+a.temporary:hover {
+  color: #FF3769; }
 
 a.blog {
   padding: 0px 7.5px 0px 7.5px; }
@@ -830,13 +890,23 @@ nav.scroll {
 body {
   font-family: 'Inter UI', sans-serif; }
 
-a.logo, a.blog, xw {
+a.logo, a.blog {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bolder;
   font-size: 0.8em;
   color: #3E3535;
   letter-spacing: 1.2px; }
+
+a.temporary {
+  font-size: 2em;
+  cursor: pointer;
+  font-weight: lighter;
+  color: #422FFA;
+  text-decoration: none; }
+
+a.temporary:hover {
+  color: #FF3769; }
 
 a.blog {
   padding: 0px 7.5px 0px 7.5px; }
@@ -903,13 +973,23 @@ p {
 body {
   font-family: 'Inter UI', sans-serif; }
 
-a.logo, a.blog, xw {
+a.logo, a.blog {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bolder;
   font-size: 0.8em;
   color: #3E3535;
   letter-spacing: 1.2px; }
+
+a.temporary {
+  font-size: 2em;
+  cursor: pointer;
+  font-weight: lighter;
+  color: #422FFA;
+  text-decoration: none; }
+
+a.temporary:hover {
+  color: #FF3769; }
 
 a.blog {
   padding: 0px 7.5px 0px 7.5px; }
@@ -976,13 +1056,23 @@ p {
 body {
   font-family: 'Inter UI', sans-serif; }
 
-a.logo, a.blog, xw {
+a.logo, a.blog {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bolder;
   font-size: 0.8em;
   color: #3E3535;
   letter-spacing: 1.2px; }
+
+a.temporary {
+  font-size: 2em;
+  cursor: pointer;
+  font-weight: lighter;
+  color: #422FFA;
+  text-decoration: none; }
+
+a.temporary:hover {
+  color: #FF3769; }
 
 a.blog {
   padding: 0px 7.5px 0px 7.5px; }
@@ -1081,7 +1171,7 @@ ul.projects {
   overflow: hidden;
   min-height: 532px; }
 
-section.project-grid {
+.project-grid {
   margin: 4em 0 4em 0;
   width: 1400px;
   max-width: 1400px;
@@ -1091,31 +1181,31 @@ section.project-grid {
   grid-row-gap: 25px;
   grid-column-gap: 20px; }
   @media (max-width: 599px) {
-    section.project-grid {
+    .project-grid {
       grid-template-columns: 1fr;
       grid-row-gap: 40px; } }
   @media (max-width: 600px) {
-    section.project-grid {
+    .project-grid {
       grid-template-columns: 1fr;
       grid-row-gap: 40px; } }
   @media (max-width: 900px) {
-    section.project-grid {
+    .project-grid {
       grid-template-columns: 1fr;
       grid-row-gap: 40px; } }
 
-.project-image {
+aside.project-image {
   background-color: #EBEBEB;
   height: 350px;
   margin: 0; }
   @media (max-width: 599px) {
-    .project-image {
+    aside.project-image {
       height: 220px; } }
 
 .project-box {
   align-self: start;
   margin: 2em; }
 
-.project-info {
+article.project-info {
   max-width: 580px;
   margin: 1.5em 0 0 0;
   line-height: 22px; }
@@ -1322,13 +1412,23 @@ section.illustration-grid {
 body {
   font-family: 'Inter UI', sans-serif; }
 
-a.logo, a.blog, xw {
+a.logo, a.blog {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bolder;
   font-size: 0.8em;
   color: #3E3535;
   letter-spacing: 1.2px; }
+
+a.temporary {
+  font-size: 2em;
+  cursor: pointer;
+  font-weight: lighter;
+  color: #422FFA;
+  text-decoration: none; }
+
+a.temporary:hover {
+  color: #FF3769; }
 
 a.blog {
   padding: 0px 7.5px 0px 7.5px; }
