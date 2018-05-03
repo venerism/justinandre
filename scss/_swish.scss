@@ -5,7 +5,6 @@
 @import 'layout';
 
 section.swish-grid{
-  //border: 1px solid blue;
   display:grid;
   margin: 7em 0 4em 0;
   max-width: 1400px;
@@ -17,8 +16,7 @@ section.swish-grid{
   "swish_header swish_header swish_header"
   "swish_splash swish_splash swish_splash"
   ". swish_quote swish_quote"
-  "swish_screen1 swish_wishlist swish_delivery"
-  ;
+  "swish_screen1 swish_wishlist swish_delivery";
   @include for-phone-only{
     margin: 2em 0 4em 0;
     grid-gap:40px;
@@ -33,25 +31,19 @@ section.swish-grid{
     "swish_delivery"
     ;
   }
-
-
   @include for-hd-desktop{
     margin: 7em 1em 4em 1em;
   }
-
-
 .swish-header{
-  grid-area:swish_header;
-  //border:1px solid black;
-  display:grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-gap:50px;
+    grid-area:swish_header;
+    display:grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap:50px;
   @include for-phone-only{
     grid-template-columns: 1fr;
     grid-gap: 40px;
     grid-template-rows: 70px 70px 70px;
   }
-
 }
 
 aside.swish-title{
@@ -60,7 +52,6 @@ aside.swish-title{
 aside.swish-details{
 //grid-area:swish_details;
 }
-
 .swish-splash{
   grid-area:swish_splash;
   background-image:url(../img/swish/swish-splash.jpg);
@@ -68,12 +59,10 @@ aside.swish-details{
   background-position: center;
   background-repeat: no-repeat;
 }
-
 article.swish-quote{
   grid-area:swish_quote;
   align-self: center;
 }
-
 .swish-screen1{
   grid-area:swish_screen1;
   background-image:url(../img/swish/swish-screen1.png);
@@ -82,7 +71,6 @@ article.swish-quote{
   background-repeat: no-repeat;
   background-color: $background-grey;
 }
-
 .swish-wishlist{
   grid-area:swish_wishlist;
   background-image:url(../img/swish/swish-wishlist.png);
@@ -99,5 +87,4 @@ article.swish-quote{
   background-repeat: no-repeat;
     background-color: $background-grey;
 }
-
 }
