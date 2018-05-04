@@ -1,0 +1,12 @@
+@import "layout";
+@import "typography";
+@import "colours";
+@import "mixins";
+
+
+section.milya-splashbox{
+  margin: 7em 0 1em 0;
+  width: 100%;
+  align-self: baseline;
+  display:grid;
+}
