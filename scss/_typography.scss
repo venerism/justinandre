@@ -66,7 +66,20 @@ blockquote.attention{
 
 // Style Guides //
 
+h4{
+  margin: 0;
+  font-size: 120px;
+  font-weight: bolder;
+  color: $background-grey;
+  -webkit-text-stroke-width: 2px;
+ -webkit-text-stroke-color: $default-text;
+}
+
+
+
 // Subhead //
+
+
 h1{
 
   font-weight: 400;
@@ -81,8 +94,8 @@ h1{
 
 h2{
   margin: 0;
-  font-size: 22px;
-  font-weight: bolder;
+  font-size: 32px;
+  font-weight: lighter;
 }
 
 h3{

@@ -4,65 +4,121 @@
 @import 'projects';
 @import 'layout';
 
-section.swish-grid{
+
+section.swish-splashbox{
+  margin: 7em 0 1em 0;
+  width: 100%;
+  align-self: baseline;
   display:grid;
-  margin: 7em 0 4em 0;
-  max-width: 1400px;
-  grid-row-gap: 40px;
-  grid-template-columns:1fr 1fr 1fr;
-  justify-items: stretch;
-  grid-template-rows: 120px 800px 440px 700px;
-  grid-template-areas:
-  "swish_header swish_header swish_header"
-  "swish_splash swish_splash swish_splash"
-  ". swish_quote swish_quote"
-  "swish_screen1 swish_wishlist swish_delivery";
-  @include for-phone-only{
-    margin: 2em 0 4em 0;
-    grid-gap:40px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 300px 400px 300px 500px 500px 500px;
-    grid-template-areas:
-    "swish_header "
-    "swish_splash"
-    "swish_quote"
-    "swish_screen1"
-    "swish_wishlist"
-    "swish_delivery"
-    ;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-rows: 175px 800px;
+    .swish-title{
+      //background-color: $link-active;
+    }
+    .swish-challenge{
+      //background-color: $link-hover;
+    }
+    .swish-solution{
+      //background-color: $illustration-salmon;
+    }
+    .swish-title-splash{
+      //background-color: $illustration-purple;
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+}
+
+section.swish-introduction{
+margin: 3em 0 1em 0;
+display:grid;
+height:1000px;
+width: 100%;
+grid-template-rows: 1fr 2fr;
+grid-template-columns: 3fr 4fr;
+  .swish-overview-title{
+    border-top: 2px solid $default-text;
+    //background-color: $link-active;
   }
-  @include for-hd-desktop{
-    margin: 7em 1em 4em 1em;
+  .swish-inspiration-title{
+    border-top: 2px solid $default-text;
+    //background-color: $link-hover;
   }
-.swish-header{
-    grid-area:swish_header;
-    display:grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-gap:50px;
-  @include for-phone-only{
-    grid-template-columns: 1fr;
-    grid-gap: 40px;
-    grid-template-rows: 70px 70px 70px;
+  .swish-overview-para{
+    border-top: 2px solid $default-text;
+    //background-color: $illustration-salmon;
+  }
+  .swish-inspiration-para{
+    border-top: 2px solid $default-text;
+    //background-color: $illustration-purple;
+  }
+}
+section.swish-process{
+border-top: 2px solid $default-text;
+margin: 1em 0 1em 0;
+display:grid;
+width: 100%;
+height: 1500px;
+grid-column-gap:25px;
+grid-row-gap:50px;
+grid-template-columns:repeat(3, 1fr);
+grid-template-rows: 125px repeat(3, 1fr);
+
+  .process-title{
+    //background-color: $link-active;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .swish-process-box{
+    //border: 1px solid red;
+    //background-color: $link-active;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    aside.swish-process1{
+      margin-bottom: 1em;
+      width: 100%;
+      height: 400px;
+      background-color: $link-active;
+    }
+    aside.swish-process2{
+      width: 100%;
+      height: 400px;
+      background-color: $link-active;
+    }
+    aside.swish-process3{
+      width: 100%;
+      height: 400px;
+      background-color: $link-active;
+    }
+    aside.swish-process4{
+      width: 100%;
+      height: 400px;
+      background-color: $link-active;
+    }
+    aside.swish-process5{
+      width: 100%;
+      height: 400px;
+      background-color: $link-active;
+    }
+    aside.swish-process6{
+      width: 100%;
+      height: 400px;
+      background-color: $link-active;
+    }
   }
 }
 
-aside.swish-title{
-//grid-area:swish_title;
-}
-aside.swish-details{
-//grid-area:swish_details;
-}
+
+//--- Backgrounds & Images ----///
+
 .swish-splash{
-  grid-area:swish_splash;
+
   background-image:url(../img/swish/swish-splash.jpg);
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-article.swish-quote{
-  grid-area:swish_quote;
-  align-self: center;
-}
+
 .swish-screen1{
   grid-area:swish_screen1;
   background-image:url(../img/swish/swish-screen1.png);
@@ -86,5 +142,4 @@ article.swish-quote{
   background-position: center;
   background-repeat: no-repeat;
     background-color: $background-grey;
-}
 }
