@@ -1,0 +1,83 @@
+@import 'colours';
+@import 'mixins';
+@import 'typography';
+@import 'projects';
+@import 'layout';
+
+
+section.info-splashbox{
+  margin: 7em 0 1em 0;
+  width: 100%;
+  align-self: baseline;
+  display:grid;
+  grid-template-columns: 1fr 1fr 2fr 2fr;
+  grid-template-rows: 500px;
+  grid-gap:25px;
+  .info-title{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    //border: 1px solid red;
+  }
+  .info-splash{
+    background-color: $illustration-salmon;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    //border: 1px solid red;
+  }
+
+}
+
+section.bio{
+  border-top: 2px solid $default-text;
+  padding-top: 5em;
+  margin: 7em 0 5em 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 2fr;
+  grid-template-rows: 350px 250px;
+  grid-gap: 25px 25px;
+
+  .info-exp{
+    //background-color:$illustration-purple
+  }
+  .info-paragraph{
+    grid-column-start:3;
+    grid-column-end: 5;
+    //background-color: $illustration-salmon;
+  }
+  .info-tools{
+    grid-column-start:3;
+    grid-column-end: 4;
+    //background-color: $illustration-purple;
+  }
+  .info-expertise{
+    grid-column-start:4;
+    grid-column-end: 5;
+    //background-color: $illustration-salmon;
+  }
+
+}
+
+section.essentials{
+  border-top: 2px solid $default-text;
+  padding-top: 5em;
+  margin: 7em 0 5em 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns:repeat(5, 1fr);
+  grid-template-rows: 150px 800px 300px;
+  grid-gap: 25px 25px;
+.essentials-title{
+  //background-color: $illustration-salmon;
+  grid-column: 1/6;
+}
+.essentials-splash{
+  background-color: $illustration-salmon;
+  grid-column: 1/6;
+  grid-row: 2/3;
+}
+.essentials-list{
+  //background-color: $illustration-salmon;
+}
+
+}
