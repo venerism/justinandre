@@ -124,5 +124,7 @@ article.footer{
 @include for-tablet-portait-up{
   display: none;
 }
-
+@include for-hd-desktop{
+  display:block;
+}
 }

@@ -33,24 +33,42 @@ section.swish-introduction{
   width: 100%;
   grid-template-rows: 2fr 3fr;
   grid-template-columns: 3fr 4fr;
+  @include for-tablet-portait-up{
+    width: 95%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 160px repeat(2 300px);
+  }
+
   .swish-overview-title{
     padding-top: 1em;
     border-top: 2px solid $default-text;
+    @include for-tablet-portait-up{
+      border: none;
+    }
     //background-color: $link-active;
   }
   .swish-inspiration-title{
     padding-top: 1em;
     border-top: 2px solid $default-text;
     //background-color: $link-hover;
+    @include for-tablet-portait-up{
+      border: none;
+    }
   }
   .swish-overview-para{
     padding-top: 1em;
     border-top: 2px solid $default-text;
+    @include for-tablet-portait-up{
+      border: none;
+    }
     //background-color: $illustration-salmon;
   }
   .swish-inspiration-para{
     padding-top: 1em;
     border-top: 2px solid $default-text;
+    @include for-tablet-portait-up{
+      border: none;
+    }
     //background-color: $illustration-purple;
   }
 }
@@ -65,11 +83,24 @@ section.swish-process{
     grid-row-gap:50px;
     grid-template-columns:repeat(3, 1fr);
     grid-template-rows: 125px repeat(3, 1fr);
-
+    @include for-phone-only{
+    grid-template-rows: 160px repeat(6, 600px);
+    }
+    @include for-tablet-portait-up{
+    width: 95%;
+    height: 3900px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 160px repeat(6, 580px);
+    grid-row-gap:25px;
+    }
   .process-title{
     //background-color: $link-active;
     grid-column-start: 1;
     grid-column-end: 4;
+    @include for-tablet-portait-up{
+      grid-column-start: 1;
+      grid-column-end:2;
+    }
   }
   .swish-process-box{
       //border: 1px solid red;
@@ -96,6 +127,12 @@ section.swish-personas{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 600px;
     grid-column-gap: 25px;
+    @include for-tablet-portait-up{
+      width: 95%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 160px repeat(2, 600px);
+      grid-row-gap:25px;
+    }
   aside.swish-persona-box{
     margin-bottom: 1em;
     width: 100%;
@@ -114,12 +151,21 @@ section.swish-userflows{
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(2, 1fr);
     grid-gap:25px;
+    @include for-tablet-portait-up{
+      width: 95%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 140px repeat(2, 425px);
+    }
 
 
   .swish-userflow-box{
     grid-column-start: 2;
     grid-column-end: 3;
-    //height:400px;
+    @include for-tablet-portait-up{
+      grid-column: 1/2;
+    }
+
+
     background-color: $default-text;
 
   }
@@ -138,10 +184,19 @@ section.swish-sketches{
     grid-template-rows: repeat(2,1fr);
     grid-gap:25px;
 
+    @include for-tablet-portait-up{
+      width:95%;
+      height:2000px;
+      grid-template-columns:1fr;
+      grid-template-rows: 150px repeat(4, 400px);
+    }
 
   .swish-sketch-title{
     grid-row-start:1;
     grid-row-end:3;
+    @include for-tablet-portait-up{
+      grid-row:1/2;
+    }
 
   }
   .swish-sketch-box{
@@ -164,6 +219,7 @@ section.swish-mobile{
   ;
   grid-template-rows: 600px;
   align-self: center;
+
 }
 
 
@@ -177,12 +233,24 @@ section.swish-br-box{
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 100px repeat(4, 500px);
   grid-gap: 25px 25px;
-
-
-
+  @include for-tablet-portait-up{
+    width: 95%;
+    height:1500px;
+    grid-template-rows: 160px repeat(4, 350px);
+  }
+  @include for-phone-only{
+    width: 90%;
+    height:2100px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 160px repeat(7, 300px);
+  }
   .swish-browser-title{
     grid-column-start: 1;
     grid-column-end: 3;
+    @include for-phone-only{
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
 
   }
   .swish-browser1{

@@ -92,12 +92,18 @@ h2{
   margin: 0;
   font-size: 32px;
   font-weight: lighter;
+  @include for-tablet-portait-up{
+    font-size: 22px;
+  }
 }
 
 h3{
   margin: 0;
   font-size:64px;
   font-weight:lighter;
+  @include for-tablet-portait-up{
+    font-size: 54px;
+  }
 }
 
 // Captions //
