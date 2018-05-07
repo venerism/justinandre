@@ -31,7 +31,7 @@ section.swish-introduction{
   display:grid;
   height:1000px;
   width: 100%;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 2fr 3fr;
   grid-template-columns: 3fr 4fr;
   .swish-overview-title{
     padding-top: 1em;
@@ -81,7 +81,7 @@ section.swish-process{
       margin-bottom: 1em;
       width: 100%;
       height: 400px;
-      background-color: $link-active;
+      background-color: $default-text;
     }
   }
 }
@@ -94,13 +94,13 @@ section.swish-personas{
     display:grid;
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 700px;
+    grid-template-rows: 600px;
     grid-column-gap: 25px;
   aside.swish-persona-box{
     margin-bottom: 1em;
     width: 100%;
     height: 400px;
-    background-color: $link-active;
+    background-color: $default-text;
   }
 }
 
@@ -112,34 +112,89 @@ section.swish-userflows{
     width: 100%;
     height:1200px;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-gap:25px;
+
+
   .swish-userflow-box{
     grid-column-start: 2;
     grid-column-end: 3;
-    height:475px;
-    background-color: $link-active;
+    //height:400px;
+    background-color: $default-text;
+
   }
 }
 
 section.swish-sketches{
     padding-top: 1em;
+    padding-bottom: 2em;
     border-top: 2px solid $default-text;
-    margin: 1em 0 1em 0;
+    border-bottom:2px solid $default-text;
+    margin: 1em 0 2em 0;
     display:grid;
     width: 100%;
-    height: 1200px;
+    height: 800px;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
     grid-gap:25px;
+
+
   .swish-sketch-title{
     grid-row-start:1;
     grid-row-end:3;
+
   }
   .swish-sketch-box{
-   background-color: $link-active;
+   background-color: $default-text;
   }
 }
+
+
+section.swish-mobile{
+  padding-top:1em;
+  margin: 0em 0 1em 0;
+  display:grid;
+  width: 100%;
+  height:800px;
+  //background-color: $default-text;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "swish_screen1 swish_wishlist swish_delivery"
+  ;
+  grid-template-rows: 600px;
+  align-self: center;
+}
+
+
+section.swish-br-box{
+  border-top: 2px solid $default-text;
+  padding-top:1em;
+  margin: 0 0 1em 0;
+  display:grid;
+  width: 100%;
+  height:2000px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100px repeat(4, 500px);
+  grid-gap: 25px 25px;
+
+
+
+  .swish-browser-title{
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+  }
+  .swish-browser1{
+    background-color: $default-text;
+  }
+  .swish-browser2{}
+  .swish-browser3{}
+  .swish-browser4{}
+  .swish-browser5{}
+  .swish-browser6{}
+}
+
 //--- Backgrounds & Images ----///
 
 .swish-splash{
@@ -155,7 +210,7 @@ section.swish-sketches{
   background-size:contain;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: $background-grey;
+  //background-color: $background-grey;
 }
 .swish-wishlist{
   grid-area:swish_wishlist;
@@ -163,7 +218,7 @@ section.swish-sketches{
   background-size:contain;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: $background-grey;
+  //background-color: $background-grey;
 }
 .swish-delivery{
   grid-area:swish_delivery;
@@ -171,5 +226,5 @@ section.swish-sketches{
   background-size:contain;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: $background-grey;
+  //background-color: $background-grey;
 }

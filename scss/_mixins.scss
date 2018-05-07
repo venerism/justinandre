@@ -3,10 +3,10 @@
   @media (max-width: 425px) {@content;}
 }
 @mixin for-tablet-portait-up{
-  @media (max-width:768px) {@content;}
+  @media (min-width:768px) {@content;}
 }
 @mixin for-tablet-landscape-up{
-  @media (max-width:900px) {@content;}
+  @media (min-width:900px) {@content;}
 }
 @mixin for-desktop{
   @media (min-width: 1024px) {@content;}
