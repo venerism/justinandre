@@ -3,7 +3,6 @@
 @import "mixins";
 //----------------------
 
-
 body > header {
   margin-top: 4.7em;
 }
@@ -28,35 +27,35 @@ nav{
     flex-direction: row;
     align-items: center;
   }
+
   aside.nav-left{
     margin-left: 1em;
-
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+
   img.logo-img{
       width: 50%;
       height: 50%;
     }
-img.logo-img:hover{
-  width: 55%;
-  height: 55%;
-  transition-duration: 0.2s;
-}
 
+  img.logo-img:hover{
+    width: 55%;
+    height: 55%;
+    transition-duration: 0.2s;
+    }
+    
     a{
       margin: 0 0 0 0;
       padding: 0 0 0 0;
     }
   }
 }
-
 nav.scroll {
   background-color: $background-grey;
   color: #eef;
 }
-
 
 content{
   //border: 1px solid red;
@@ -86,7 +85,6 @@ section.info{
     text-align: left;
   }
 }
-
 ul.projects{
   list-style: none;
   display: flex;
@@ -94,7 +92,6 @@ ul.projects{
   overflow: hidden;
   min-height: 532px;
 }
-
 article.footer{
   min-width: 100%;
   margin-bottom: 5em;
@@ -109,7 +106,6 @@ article.footer{
       max-width: 333px;
      margin-right: 35px;
     }
-
 }
 
 .scroll-to-top-link{
@@ -122,5 +118,4 @@ article.footer{
   z-index: 1;
   width: 23px;
   height: 92px;
-
 }
