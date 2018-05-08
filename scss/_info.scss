@@ -46,11 +46,27 @@ section.bio{
     //background-color: $illustration-salmon;
   }
   .info-tools{
+    display: grid;
+    grid-template: 1fr 6fr / repeat(2, 1fr);
     grid-column-start:3;
     grid-column-end: 4;
     //background-color: $illustration-purple;
+    .tools-title{
+    grid-column: 1/3;
+    border: 1px solid red;
+    }
+      .tools1{
+      grid-column: 1/2;
+      border: 1px solid red;
+      }
+      .tools2{
+      grid-column: 2/3;
+      border: 1px solid red;
+      }
   }
   .info-expertise{
+    display: grid;
+    grid-template: 1fr 6fr/ 1fr;
     grid-column-start:4;
     grid-column-end: 5;
     //background-color: $illustration-salmon;
