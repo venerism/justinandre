@@ -5,3 +5,123 @@
 @import 'layout';
 
 //----- Illustrations Grid ---- //
+
+
+section.illustration-splash{
+
+}
+
+section.illustration-idtheft{
+  border-top: 2px solid $default-text;
+  padding-top: 2em;
+  margin: 7em 0 1em 0;
+  width: 100%;
+  height:900px;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 25px;
+    .illustration-overview{}
+    .idtheft-1{
+      background-color: $illustration-splash;
+      grid-column: 2/4;
+    }
+    .idtheft-2{
+      background-color: $illustration-splash;
+      grid-column: 2/3;
+    }
+    .idtheft-3{
+      background-color: $illustration-splash;
+      grid-column: 3/3;
+    }
+}
+
+
+section.illustration-esports{
+  border-top: 2px solid $default-text;
+  margin: 3em 0 1em 0;
+  display: grid;
+  height: 1400px;
+  width:100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 150px repeat(2, 400px);
+  grid-gap: 25px 25px;
+  .illustration-overview{}
+  .esports-1{
+    background-color: $illustration-navy;
+  }
+  .esports-2{
+    background-color: $illustration-navy;
+  }
+  .esports-3{
+    background-color: $illustration-navy;
+  }
+  .esports-4{
+    background-color: $illustration-navy;
+  }
+  .esports-5{
+    background-color: $illustration-navy;
+  }
+  .esports-6{
+    background-color: $illustration-navy;
+  }
+
+}
+
+
+section.illustration-legup{
+  border-top: 2px solid $default-text;
+  margin: 3em 0 1em 0;
+  display:grid;
+  height:1000px;
+  width:100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 800px;
+  grid-row-gap: 25px;
+  .illustration-overview{}
+  .legup{
+    background-color: $illustration-blue;
+  }
+}
+
+
+section.illustration-editorial{
+  border-top: 2px solid $default-text;
+  margin: 3em 0 1em 0;
+  display:grid;
+  height: 1000px;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 800px;
+  grid-row-gap: 25px;
+  .illustration-overview{}
+  .editorial{
+    background-color: $illustration-salmon;
+  }
+}
+
+
+section.illustration-1password{
+  border-top: 2px solid $default-text;
+  margin: 3em 0 1em 0;
+  display:grid;
+  height: 1400px;
+  width: 100%;
+  grid-template-columns: 2fr;
+  grid-template-rows: 150px repeat(2, 400px);
+  grid-row-gap: 25px;
+  .illustration-overview{}
+  .agile1{
+    background-color:$illustration-blue;
+  }
+  .agile2{
+    background-color:$illustration-blue;
+  }
+  .agile3{
+    background-color:$illustration-blue;
+  }
+  .agile4{
+    background-color:$illustration-blue;
+  }
+
+}
