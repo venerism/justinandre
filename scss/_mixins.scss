@@ -19,7 +19,7 @@
 // if device is less than or equal to 900px then do...
 
 @mixin for-desktop{
-  @media (max-width: 1024px) {@content;}
+  @media (min-width: 768px) and (max-width: 1024px) {@content;}
 }
 // if device is less than or equal to 1024px then do...
 
