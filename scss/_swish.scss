@@ -11,6 +11,12 @@ section.swish-splashbox{
   display:grid;
   grid-template-columns: 3fr 1fr 1fr;
   grid-template-rows: 175px 800px;
+  @include for-tablet-portait-up{
+    width: 95%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 175px repeat(2, 120px) 300px;
+  }
+
     .swish-title{
     //background-color: $link-active;
     }
@@ -24,6 +30,10 @@ section.swish-splashbox{
       //background-color: $illustration-purple;
       grid-column-start: 1;
       grid-column-end: 5;
+      @include for-tablet-portait-up{
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
     }
 }
 section.swish-introduction{
