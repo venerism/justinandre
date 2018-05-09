@@ -22,18 +22,30 @@ grid-gap: 25px;
   grid-column: 1/3;
   grid-row: 1/2;
   cursor: pointer;
+  background-image: url("/img/swish/swish-project.png");
+  background-repeat: no-repeat;
+  background-position: 90% 100%;
+  background-size: 35%;
 }
 .project-milya{
   background-color: $milya;
   grid-column: 1/2;
   grid-row: 2/4;
   cursor: pointer;
+  background-image: url("/img/milya/milya-project.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center center;
 }
 .project-illustration{
   background-color: $illustration-navy;
   grid-column: 2/3;
   grid-row:2/3;
   cursor: pointer;
+  background-image: url("/img/illustrations/illustration-project.png");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: bottom center;
 }
 .project-movingposter{
   background-color: $posters;
