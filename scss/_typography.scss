@@ -23,6 +23,12 @@ a.temporary{
   font-weight: lighter;
   color: $milya;
   text-decoration: none;
+  @include for-tablet-portait-up{
+    font-size: 1.5em;
+  }
+  @include for-phone-only{
+    font-size: 1.3em;
+  }
 }
 a.temporary:hover,{
   color:$link-hover;
@@ -61,6 +67,9 @@ blockquote.attention{
   @include for-phone-only{
     font-size: 1.2em;
   }
+  @include for-tablet-portait-up{
+    font-size: 1.5em;
+  }
 }
 
 // Style Guides //
@@ -86,6 +95,8 @@ h4{
 
 // Subhead //
 
+
+
 h1{
 
   font-weight: 400;
@@ -95,6 +106,12 @@ h1{
     font-size: 1.2em;
     width: 100%;
     line-height: 1.5em;
+  }
+  @include for-tablet-portait-up{
+    font-size: 1.5em;
+  }
+  @include for-tablet-landscape-up{
+    font-size: 1.8em;
   }
 }
 
