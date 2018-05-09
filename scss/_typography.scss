@@ -66,6 +66,7 @@ blockquote.attention{
 // Style Guides //
 
 h4{
+  line-height: 115px;
   margin: 0;
   font-size: 120px;
   font-weight: bolder;
@@ -73,11 +74,13 @@ h4{
   -webkit-text-stroke-width: 2px;
  -webkit-text-stroke-color: $default-text;
  @include for-tablet-portait-up{
+   line-height: 65px;
    font-size: 70px;
    -webkit-text-stroke-width: 1px;
  }
  @include for-phone-only{
    font-size: 55px;
+   line-height: 45px;
  }
 }
 
@@ -128,4 +131,14 @@ p{
   font-size: 18px;
   margin: 0;
   font-weight: lighter;
+}
+
+li.biolist{
+  border-top: 1px solid $list-grey;
+  padding: 7px 0 7px 0;
+  font-size: 20px;
+  font-weight: lighter;
+  b{
+    font-size: 16px;
+  }
 }
