@@ -121,30 +121,44 @@ grid-gap: 25px;
     }
   }
 
-
-.project-movingposter{
-  background-color: $posters;
+.project-airmax{
+  background-color: $illustration-navy;
   grid-column: 2/3;
   grid-row: 3/4;
   cursor: pointer;
+  background-image: url("/img/nike/nike-project.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  transition: 0.5s;
+    @include for-tablet-portait-up{
+      grid-column: 1/3;
+      grid-row: 4/5;
+      background-size: 70%;
+    }
+}
+
+
+.project-airmax{
+  background-image: url("/img/nike/project-nike3.png");
+  background-color: $nike-background;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: 0.5s;
   @include for-tablet-portait-up{
     grid-column: 1/3;
     grid-row: 4/5;
   }
 }
-
-
-.overlay{
-  width:100%;
-  height:100%;
-  background-color:$overlay;
-  display: none;
-  transition: 0.5s ease;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
+.project-airmax:hover{
+  background-size: 102%;
+  @include for-tablet-portait-up{
+    background-size: 90%;
+  }
 }
-
 
 }
