@@ -30,13 +30,13 @@ align-items: center;
 }
 
 section.project-grid{
-margin: 0em 0 2em 0;
-width:100%;
-height: 1600px;
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: 640px repeat(2, 400px);
-grid-gap: 25px;
+  margin: 0em 0 2em 0;
+  width:100%;
+  height: 1600px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 640px repeat(2, 400px);
+  grid-gap: 25px;
 @include for-tablet-portait-up{
   height: 1500px;
   width: 95%;
@@ -63,7 +63,7 @@ grid-gap: 25px;
 
 .project-swish:hover{
   background-size:36%;
-@include for-tablet-portait-up{
+  @include for-tablet-portait-up{
   background-size: 51%;
 }
 
@@ -138,7 +138,6 @@ grid-gap: 25px;
     }
 }
 
-
 .project-airmax{
   background-image: url("/img/nike/project-nike3.png");
   background-color: $nike-background;
@@ -161,8 +160,5 @@ grid-gap: 25px;
   }
 }
 
-.test{
-  
-}
 
 }

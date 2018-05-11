@@ -4459,6 +4459,32 @@ section.essentials {
     grid-column: 1/6;
     grid-row: 2/3; }
 
+section.illustration-splash {
+  margin: 7em 0 2em 0;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  width: 100%; }
+  @media (max-width: 768px) {
+    section.illustration-splash {
+      width: 95%;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 100px); } }
+
+section.nike-splash {
+  margin: 7em 0 2em 0;
+  display: grid;
+  width: 100%;
+  height: 1000px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 800px; }
+
+section.nike-grid {
+  display: grid;
+  width: 100%;
+  height: 1680px;
+  grid-template-columns: auto;
+  grid-template-rows: auto; }
+
 html {
   background-color: #F7F7F7;
   margin: 0;
