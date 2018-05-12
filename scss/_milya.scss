@@ -3,9 +3,19 @@
 @import "colours";
 @import "mixins";
 
-section.milya-splashbox{
-  margin: 7em 0 1em 0;
+
+
+section.milya-splash-box{
   width: 100%;
-  align-self: baseline;
-  display:grid;
+  height: 960px;
+  display: grid;
+  grid-template-columns: 2fr repeat(2, 1fr);
+  grid-template-rows: 160px 800px;
+  @include for-tablet-portait-up{
+    width: 95%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 100px) 400px;
+  }
+  .milya-title{}
+  .milya-description{}
 }

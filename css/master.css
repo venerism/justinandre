@@ -3453,11 +3453,17 @@ li.biolist {
   li.biolist b {
     font-size: 16px; }
 
-section.milya-splashbox {
-  margin: 7em 0 1em 0;
+section.milya-splash-box {
   width: 100%;
-  align-self: baseline;
-  display: grid; }
+  height: 960px;
+  display: grid;
+  grid-template-columns: 2fr repeat(2, 1fr);
+  grid-template-rows: 160px 800px; }
+  @media (max-width: 768px) {
+    section.milya-splash-box {
+      width: 95%;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 100px) 400px; } }
 
 body {
   font-family: 'Inter UI', sans-serif; }
@@ -4474,7 +4480,7 @@ section.nike-splash {
   margin: 7em 0 0 0;
   display: grid;
   width: 100%;
-  height: 950px;
+  height: 960px;
   grid-template-columns: 2fr repeat(2, 1fr);
   grid-template-rows: 160px 800px; }
   section.nike-splash .nike-title {
