@@ -6,10 +6,12 @@
 
 
 section.milya-splash-box{
+  margin: 7em 0 1em 0;
   width: 100%;
   height: 960px;
   display: grid;
-  grid-template-columns: 2fr repeat(2, 1fr);
+  grid-template-columns: 2fr repeat(2, 350px);
+  grid-column-gap: 25px;
   grid-template-rows: 160px 800px;
   @include for-tablet-portait-up{
     width: 95%;
@@ -18,4 +20,20 @@ section.milya-splash-box{
   }
   .milya-title{}
   .milya-description{}
+  .milya-splash{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: $milya;
+  }
+}
+
+section.milya-overview{
+  margin: 3em 0 1em 0;
+  width:100%;
+  height:600px;
+  display:grid;
+  grid-template-columns: 3fr 4fr;
+  grid-template-rows: 1fr 1fr;
+  .milya-ov-title{}
+  .milya-ov-para{}
 }
