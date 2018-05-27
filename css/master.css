@@ -3535,7 +3535,7 @@ section.milya-personas {
     grid-template-rows: 100px 2fr;
     padding: 2em;
     background-color: #FFFFFF;
-    z-index: 20;
+    z-index: -20;
     -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
     -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23); }
@@ -3592,6 +3592,74 @@ section.milya-personas {
     section.milya-personas .milya-persona-card .milya-card-description li {
       margin-top: 1em;
       margin-bottom: 1em; }
+
+section.milya-flows {
+  padding-top: 2em;
+  display: grid;
+  width: 100%;
+  height: 1750px;
+  margin: 3em 0 1em 0;
+  border-top: 1px solid #232431;
+  grid-template-rows: 100px repeat(3, 500px);
+  grid-template-columns: 1fr 3fr;
+  grid-row-gap: 25px; }
+  section.milya-flows .milya-title {
+    grid-column-start: 1;
+    grid-column-end: 2; }
+  section.milya-flows .milya-flow-card {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 2em;
+    background-color: #FFFFFF;
+    z-index: 20;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23); }
+  section.milya-flows #milya-flow1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-image: url("../img/milya/milya-flow-1.png"); }
+  section.milya-flows #milya-flow2 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-image: url("../img/milya/milya-flow-2.png"); }
+  section.milya-flows #milya-flow3 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-image: url("../img/milya/milya-flow-3.png"); }
+
+section.milya-wireframes {
+  padding-top: 2em;
+  display: grid;
+  width: 100%;
+  height: 3500px;
+  margin: 3em 0 1em 0;
+  border-top: 1px solid #232431;
+  grid-template-rows: 100px repeat(5, 600px);
+  grid-row-gap: 35px; }
+  section.milya-wireframes .milya-wireframe-card {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 2em;
+    background-color: #FFFFFF;
+    z-index: -20;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23); }
+  section.milya-wireframes #milya-wireframe1 {
+    background-image: url("../img/milya/milya-wireframe1.png"); }
+  section.milya-wireframes #milya-wireframe2 {
+    background-image: url("../img/milya/milya-wireframe2.png"); }
+  section.milya-wireframes #milya-wireframe3 {
+    background-image: url("../img/milya/milya-wireframe3.png"); }
+  section.milya-wireframes #milya-wireframe4 {
+    background-image: url("../img/milya/milya-wireframe4.png"); }
+  section.milya-wireframes #milya-wireframe5 {
+    background-image: url("../img/milya/milya-wireframe5.png"); }
 
 body {
   font-family: 'Inter UI', sans-serif; }
