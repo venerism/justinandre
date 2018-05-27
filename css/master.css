@@ -3480,12 +3480,17 @@ section.milya-overview {
   grid-template-rows: 1fr 1fr;
   grid-gap: 25px; }
 
+section.milya-problem-d {
+  height: 420px; }
+
+section.milya-problem-s {
+  height: 280px; }
+
 section.milya-problem {
   padding-top: 1.5em;
   border-top: 1px solid #232431;
   margin: 3em 0 1em 0;
   width: 100%;
-  height: 420px;
   display: grid;
   grid-column-gap: 25px;
   grid-template-columns: 1fr repeat(2, 450px); }
@@ -3493,12 +3498,28 @@ section.milya-problem {
     margin-top: 1em;
     margin-bottom: 1em; }
 
+section.milya-product-map {
+  margin: 3em 0 5em 0;
+  border-top: 1px solid #232431;
+  width: 100%;
+  height: 975px;
+  padding-top: 1.5em;
+  display: grid;
+  grid-template-rows: 100px 800px;
+  grid-row-gap: 55px; }
+  section.milya-product-map .milya-product-box {
+    margin-bottom: 1em;
+    background-image: url("../img/milya/milya-product-map.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+
 section.milya-personas {
   padding-top: 1.5em;
   border-top: 1px solid #232431;
   margin: 3em 0 1em 0;
   width: 100%;
-  height: 1900px;
+  height: 1800px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 100px repeat(3, 500px);
@@ -3509,6 +3530,7 @@ section.milya-personas {
   section.milya-personas .milya-persona-card {
     display: grid;
     grid-column-gap: 25px;
+    grid-row-gap: 1em;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 100px 2fr;
     padding: 2em;
@@ -3518,21 +3540,54 @@ section.milya-personas {
     -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23); }
     section.milya-personas .milya-persona-card .milya-card-name {
-      display: inline-block;
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: center;
       grid-column-start: 1;
       grid-column-end: 3; }
       section.milya-personas .milya-persona-card .milya-card-name .persona-img {
         width: 100px;
         height: 100px; }
       section.milya-personas .milya-persona-card .milya-card-name #jessica {
+        margin-right: 1em;
+        height: 100px;
+        width: 100px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         background-image: url("../img/milya/personas/jessica.png"); }
       section.milya-personas .milya-persona-card .milya-card-name #johncarlo {
+        margin-right: 1em;
+        height: 100px;
+        width: 100px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         background-image: url("../img/milya/personas/johncarlo.png"); }
       section.milya-personas .milya-persona-card .milya-card-name #eric {
+        margin-right: 1em;
+        height: 100px;
+        width: 100px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         background-image: url("../img/milya/personas/eric.png"); }
       section.milya-personas .milya-persona-card .milya-card-name #herman {
+        margin-right: 1em;
+        height: 100px;
+        width: 100px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         background-image: url("../img/milya/personas/herman.png"); }
       section.milya-personas .milya-persona-card .milya-card-name #theressa {
+        margin-right: 1em;
+        height: 100px;
+        width: 100px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         background-image: url("../img/milya/personas/theressa.png"); }
     section.milya-personas .milya-persona-card .milya-card-description li {
       margin-top: 1em;
