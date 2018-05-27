@@ -261,3 +261,35 @@ section.milya-wireframes{
     background-image:url('../img/milya/milya-wireframe5.png');
   }
 }
+
+section.milya-lowf{
+  padding-top: 2em;
+  display:grid;
+  width: 100%;
+  height:2200px;
+  margin:3em 0 1em 0;
+  border-top: 1px solid $default-text;
+  grid-template-rows:100px repeat(5, 600px);
+  grid-row-gap: 35px;
+  .milya-title{}
+  .milya-wireframe-card{
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    padding: 2em;
+    background-color: $white;
+    z-index: -20;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
+  }
+  #milya-lowf1{
+  background-image:url('../img/milya/milya-lowf-screens.png');
+  }
+  #milya-lowf2{
+  background-image:url('../img/milya/milya-lowf-screens2.png');
+  }
+  #milya-lowf3{
+  background-image:url('../img/milya/milya-lowf-screens3.png');
+  }
+}
