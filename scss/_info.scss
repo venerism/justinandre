@@ -11,7 +11,7 @@ section.info-splashbox{
   align-self: baseline;
   display:grid;
   grid-template-columns: 1fr 1fr 2fr 2fr;
-  grid-template-rows: 500px;
+  //grid-template-rows: 500px;
   grid-gap:25px;
   @include for-tablet-portait-up{
     grid-template-columns: 1fr;
@@ -153,11 +153,17 @@ section.essentials{
   grid-column: 1/6;
 }
 .essentials-splash{
+  background-image: url('../img/essentials.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: $illustration-salmon;
   grid-column: 1/6;
   grid-row: 2/3;
 }
 .essentials-list{
-  //background-color: $illustration-salmon;
+  li{
+    margin: 1em 0 1em 0;
+  }
 }
 }

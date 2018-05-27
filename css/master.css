@@ -1956,13 +1956,119 @@ section.illustration-1password {
       section.illustration-1password .illustration-overview {
         grid-column: 1/2; } }
   section.illustration-1password .agile1 {
-    background-color: #1989F9; }
+    background-color: #1989F9;
+    background-image: url("../img/illustrations/1pass1.png");
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat; }
   section.illustration-1password .agile2 {
-    background-color: #1989F9; }
+    background-color: #1989F9;
+    background-image: url("../img/illustrations/1pass2.png");
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat; }
   section.illustration-1password .agile3 {
-    background-color: #1989F9; }
+    background-color: #1989F9;
+    background-image: url("../img/illustrations/1pass3.png");
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat; }
   section.illustration-1password .agile4 {
-    background-color: #1989F9; }
+    background-color: #1989F9;
+    background-image: url("../img/illustrations/1pass4.png");
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat; }
+
+#idtheft1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-image: url("../img/illustrations/idtheft1.png"); }
+
+#idtheft1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-image: url("../img/illustrations/idtheft2.png"); }
+
+#idtheft3 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-image: url("../img/illustrations/idtheft3.png"); }
+
+#esports1 {
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-image: url("../img/illustrations/esports1.png"); }
+
+#esports2 {
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-image: url("../img/illustrations/esports2.png"); }
+
+#esports3 {
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-image: url("../img/illustrations/esports3.png"); }
+
+#esports4 {
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-image: url("../img/illustrations/esports4.png"); }
+
+#esports5 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/illustrations/esports5.png"); }
+
+#esports6 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/illustrations/esports6.png"); }
+
+#legup {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/illustrations/legup.png"); }
+
+#editorial {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/illustrations/editorial.png"); }
+
+#1pass1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/illustrations/1pass1.png"); }
+
+#1pass2 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/illustrations/1pass2.png"); }
+
+#1pass3 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/illustrations/1pass3.png"); }
+
+#1pass4 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/illustrations/1pass4.png"); }
 
 body {
   font-family: 'Inter UI', sans-serif; }
@@ -4682,7 +4788,6 @@ section.info-splashbox {
   align-self: baseline;
   display: grid;
   grid-template-columns: 1fr 1fr 2fr 2fr;
-  grid-template-rows: 500px;
   grid-gap: 25px; }
   @media (max-width: 768px) {
     section.info-splashbox {
@@ -4792,9 +4897,15 @@ section.essentials {
   section.essentials .essentials-title {
     grid-column: 1/6; }
   section.essentials .essentials-splash {
+    background-image: url("../img/essentials.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: #FDE9E9;
     grid-column: 1/6;
     grid-row: 2/3; }
+  section.essentials .essentials-list li {
+    margin: 1em 0 1em 0; }
 
 section.illustration-splash {
   margin: 7em 0 2em 0;
