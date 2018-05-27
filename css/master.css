@@ -3477,7 +3477,66 @@ section.milya-overview {
   height: 600px;
   display: grid;
   grid-template-columns: 3fr 4fr;
-  grid-template-rows: 1fr 1fr; }
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 25px; }
+
+section.milya-problem {
+  padding-top: 1.5em;
+  border-top: 1px solid #232431;
+  margin: 3em 0 1em 0;
+  width: 100%;
+  height: 420px;
+  display: grid;
+  grid-column-gap: 25px;
+  grid-template-columns: 1fr repeat(2, 450px); }
+  section.milya-problem .milya-description li {
+    margin-top: 1em;
+    margin-bottom: 1em; }
+
+section.milya-personas {
+  padding-top: 1.5em;
+  border-top: 1px solid #232431;
+  margin: 3em 0 1em 0;
+  width: 100%;
+  height: 1900px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100px repeat(3, 500px);
+  grid-gap: 35px; }
+  section.milya-personas .milya-persona-title {
+    grid-column-start: 1;
+    grid-column-end: 3; }
+  section.milya-personas .milya-persona-card {
+    display: grid;
+    grid-column-gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 2fr;
+    padding: 2em;
+    background-color: #FFFFFF;
+    z-index: 20;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23); }
+    section.milya-personas .milya-persona-card .milya-card-name {
+      display: inline-block;
+      grid-column-start: 1;
+      grid-column-end: 3; }
+      section.milya-personas .milya-persona-card .milya-card-name .persona-img {
+        width: 100px;
+        height: 100px; }
+      section.milya-personas .milya-persona-card .milya-card-name #jessica {
+        background-image: url("../img/milya/personas/jessica.png"); }
+      section.milya-personas .milya-persona-card .milya-card-name #johncarlo {
+        background-image: url("../img/milya/personas/johncarlo.png"); }
+      section.milya-personas .milya-persona-card .milya-card-name #eric {
+        background-image: url("../img/milya/personas/eric.png"); }
+      section.milya-personas .milya-persona-card .milya-card-name #herman {
+        background-image: url("../img/milya/personas/herman.png"); }
+      section.milya-personas .milya-persona-card .milya-card-name #theressa {
+        background-image: url("../img/milya/personas/theressa.png"); }
+    section.milya-personas .milya-persona-card .milya-card-description li {
+      margin-top: 1em;
+      margin-bottom: 1em; }
 
 body {
   font-family: 'Inter UI', sans-serif; }
