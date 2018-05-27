@@ -1981,22 +1981,22 @@ section.illustration-1password {
     background-repeat: no-repeat; }
 
 #idtheft1 {
-  background-position: center;
+  background-position: left bottom;
   background-repeat: no-repeat;
-  background-size: 80%;
-  background-image: url("../img/illustrations/idtheft1.png"); }
+  background-size: 70%;
+  background-image: url("../img/illustrations/theft1.png"); }
 
-#idtheft1 {
+#idtheft2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 55%;
-  background-image: url("../img/illustrations/idtheft2.png"); }
+  background-image: url("../img/illustrations/theft2.png"); }
 
 #idtheft3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 55%;
-  background-image: url("../img/illustrations/idtheft3.png"); }
+  background-image: url("../img/illustrations/theft3.png"); }
 
 #esports1 {
   background-position: center bottom;
@@ -2037,13 +2037,13 @@ section.illustration-1password {
 #legup {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 60%;
   background-image: url("../img/illustrations/legup.png"); }
 
 #editorial {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 90%;
   background-image: url("../img/illustrations/editorial.png"); }
 
 #1pass1 {
