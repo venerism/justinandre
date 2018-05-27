@@ -293,3 +293,151 @@ section.milya-lowf{
   background-image:url('../img/milya/milya-lowf-screens3.png');
   }
 }
+
+section.milya-onboarding{
+  border-top: 1px solid $default-text;
+  margin: 1em 0 3em 0;
+  grid-column-gap: 35px;
+  padding-top:1em;
+  width: 100%;
+  height:1500px;
+  display: grid;
+  grid-template-columns: repeat(3, 460px);
+  grid-template-rows: 100px repeat(2, 680px);
+  .milya-title{
+    grid-column-start:1;
+    grid-column-end:4;
+  }
+  .milya-signups{
+    //border: 1px solid red;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  #milya-signup1{
+    background-image: url('../img/milya/screens/milya-signup.png');
+  }
+  #milya-signup2{
+    background-image: url('../img/milya/screens/milya-signup2.png');
+  }
+  #milya-signup3{
+    background-image: url('../img/milya/screens/milya-signup3.png');
+  }
+  #milya-signup4{
+    background-image: url('../img/milya/screens/milya-signup4.png');
+  }
+  #milya-signup5{
+    background-image: url('../img/milya/screens/milya-signup5.png');
+  }
+}
+
+section.milya-mainscreens{
+  padding-top:1em;
+  border-top: 1px solid $default-text;
+  display: grid;
+  width: 100%;
+  grid-column-gap: 35px;
+  height:1000px;
+  grid-template-columns:repeat(3, 460px);
+  grid-template-rows:100px 680px;
+  .milya-title{
+    grid-column-start:1;
+    grid-column-end:4;
+  }
+  .milya-main{
+    //border: 1px solid red;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  #milya-mainscreen1{
+    background-image: url('../img/milya/screens/milya-moments.png');
+  }
+  #milya-mainscreen2{
+    background-image: url('../img/milya/screens/milya-family.png');
+  }
+  #milya-mainscreen3{
+    background-image: url('../img/milya/screens/milya-beacon.png');
+  }
+}
+
+
+
+section.milya-messenger{
+  border-top:1px solid $default-text;
+  margin: 1em 0 3em 0;
+  padding-top:1em;
+  display:grid;
+  width:100%;
+  height:1500px;
+  grid-column-gap:35px;
+  grid-template-columns:repeat(3, 460px) ;
+  grid-template-rows:100px repeat(2, 680px);
+  .milya-title{
+    grid-column-start:1;
+    grid-column-end:4;
+  }
+    .milya-messenger-screens{
+      //border: 1px solid red;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    #milya-messenger1{
+      background-image: url('../img/milya/screens/milya-messenger1.png');
+    }
+    #milya-messenger2{
+      background-image: url('../img/milya/screens/milya-messenger2.png');
+    }
+    #milya-messenger3{
+      background-image: url('../img/milya/screens/milya-messenger3.png');
+    }
+    #milya-messenger4{
+      background-image: url('../img/milya/screens/milya-messenger4.png');
+    }
+    #milya-messenger5{
+      background-image: url('../img/milya/screens/milya-messenger5.png');
+    }
+}
+
+
+section.milya-wallet{
+  border-top: 1px solid $default-text;
+  margin: 1em 0 3em 0;
+  padding-top: 1em;
+  display: grid;
+  width: 100%;
+  height:1500px;
+  grid-column-gap: 35px;
+  grid-template-columns:repeat(3, 460px);
+  grid-template-rows:100px repeat(2, 680px);
+  .milya-title{
+    grid-column-start:1;
+    grid-column-end:4;
+  }
+  .milya-wallet-screens{
+    //border:1px solid red;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  #milya-wallet1{
+    background-image: url('../img/milya/screens/milya-wallet-home.png');
+  }
+  #milya-wallet2{
+    background-image: url('../img/milya/screens/milya-wallet-store.png');
+  }
+  #milya-wallet3{
+    background-image: url('../img/milya/screens/milya-wallet1.png');
+  }
+  #milya-wallet4{
+    background-image: url('../img/milya/screens/milya-wallet2.png');
+  }
+  #milya-wallet5{
+    background-image: url('../img/milya/screens/milya-wallet3.png');
+  }
+  #milya-wallet6{
+    background-image: url('../img/milya/screens/milya-wallet4.png');
+  }
+}
