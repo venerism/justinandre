@@ -51,7 +51,7 @@ section.swish-introduction{
 
   .swish-overview-title{
     padding-top: 1em;
-    border-top: 2px solid $default-text;
+    border-top: 1px solid $default-text;
     @include for-tablet-portait-up{
       border: none;
     }
@@ -59,7 +59,7 @@ section.swish-introduction{
   }
   .swish-inspiration-title{
     padding-top: 1em;
-    border-top: 2px solid $default-text;
+    border-top: 1px solid $default-text;
     //background-color: $link-hover;
     @include for-tablet-portait-up{
       border: none;
@@ -67,7 +67,7 @@ section.swish-introduction{
   }
   .swish-overview-para{
     padding-top: 1em;
-    border-top: 2px solid $default-text;
+    border-top: 1px solid $default-text;
     @include for-tablet-portait-up{
       border: none;
     }
@@ -75,7 +75,7 @@ section.swish-introduction{
   }
   .swish-inspiration-para{
     padding-top: 1em;
-    border-top: 2px solid $default-text;
+    border-top: 1px solid $default-text;
     @include for-tablet-portait-up{
       border: none;
     }
@@ -84,7 +84,7 @@ section.swish-introduction{
 }
 section.swish-process{
     padding-top: 1em;
-    border-top: 2px solid $default-text;
+    border-top: 1px solid $default-text;
     margin: 1em 0 1em 0;
     display:grid;
     width: 100%;
@@ -130,7 +130,7 @@ section.swish-process{
 
 section.swish-personas{
     padding-top: 1em;
-    border-top: 2px solid $default-text;
+    border-top: 1px solid $default-text;
     margin: 1em 0 1em 0;
     display:grid;
     width: 100%;
@@ -153,7 +153,7 @@ section.swish-personas{
 
 section.swish-userflows{
     padding-top: 1em;
-    border-top: 2px solid $default-text;
+    border-top: 1px solid $default-text;
     margin: 1em 0 1em 0;
     display:grid;
     width: 100%;
@@ -184,8 +184,8 @@ section.swish-userflows{
 section.swish-sketches{
     padding-top: 1em;
     padding-bottom: 2em;
-    border-top: 2px solid $default-text;
-    border-bottom:2px solid $default-text;
+    border-top: 1px solid $default-text;
+    //border-bottom:2px solid $default-text;
     margin: 1em 0 2em 0;
     display:grid;
     width: 100%;
@@ -217,26 +217,26 @@ section.swish-sketches{
   }
 }
 
-
-section.swish-mobile{
-  padding-top:1em;
-  margin: 0em 0 1em 0;
-  display:grid;
-  width: 100%;
-  height:800px;
-  //background-color: $default-text;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-template-areas:
-  "swish_screen1 swish_wishlist swish_delivery";
-  grid-template-rows: 600px;
-  align-self: center;
-
-}
+//
+// section.swish-mobile{
+//   padding-top:1em;
+//   margin: 0em 0 1em 0;
+//   display:grid;
+//   width: 100%;
+//   height:800px;
+//   //background-color: $default-text;
+//   grid-template-columns: repeat(3, 1fr);
+//   grid-template-rows: 1fr;
+//   grid-template-areas:
+//   "swish_screen1 swish_wishlist swish_delivery";
+//   grid-template-rows: 600px;
+//   align-self: center;
+//
+// }
 
 
 section.swish-br-box{
-  border-top: 2px solid $default-text;
+  border-top: 1px solid $default-text;
   padding-top:1em;
   margin: 0 0 1em 0;
   display:grid;
@@ -295,45 +295,196 @@ section.swish-prototypes{
   }
 }
 
+ //--- Backgrounds & Images ----///
+// .swish-splash{
+//   background-image:url(../img/swish/swish-splash.jpg);
+//   background-size:cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+// }
+// .swish-screen1{
+//   grid-area:swish_screen1;
+//   background-image:url(../img/swish/swish-screen1.png);
+//   background-size:contain;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   //background-color: $background-grey;
+// }
+// .swish-wishlist{
+//   grid-area:swish_wishlist;
+//   background-image:url(../img/swish/swish-wishlist.png);
+//   background-size:contain;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   //background-color: $background-grey;
+// }
+// .swish-delivery{
+//   grid-area:swish_delivery;
+//   background-image:url(../img/swish/swish-delivery.png);
+//   background-size:contain;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   //background-color: $background-grey;
+// }
 
-//--- Backgrounds & Images ----///
 
-.swish-splash{
-  background-image:url(../img/swish/swish-splash.jpg);
-  background-size:cover;
-  background-position: center;
+.swish-mobile-card{
+  //border:1px solid red;
+  background-size:42%;
+  background-position-y: 75%;
+  background-position-x:center;
   background-repeat: no-repeat;
 }
 
-.swish-screen1{
-  grid-area:swish_screen1;
-  background-image:url(../img/swish/swish-screen1.png);
-  background-size:contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  //background-color: $background-grey;
+section.mobile-onboard{
+    height:1540px;
+    width:100%;
+    padding-top:2em;
+    border-top:1px solid $default-text;
+    margin:1em 0 3em 0;
+    display:grid;
+    grid-gap:25px;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:100px repeat(2, 1fr);
+    .swish-title{
+      grid-column-start:1;
+      grid-column-end: 3;
+    }
 }
-.swish-wishlist{
-  grid-area:swish_wishlist;
-  background-image:url(../img/swish/swish-wishlist.png);
-  background-size:contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  //background-color: $background-grey;
+section.mobile-orders{
+    height:1500px;
+    width:100%;
+    padding-top:2em;
+    border-top:1px solid $default-text;
+    margin:1em 0 3em 0;
+    grid-gap:25px;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:100px repeat(2, 1fr);
+    .swish-title{
+      grid-column-start:1;
+      grid-column-end: 3;
+    }
 }
-.swish-delivery{
-  grid-area:swish_delivery;
-  background-image:url(../img/swish/swish-delivery.png);
-  background-size:contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  //background-color: $background-grey;
+section.mobile-wishlist{
+    height:1500px;
+    width:100%;
+    padding-top:2em;
+    border-top:1px solid $default-text;
+    margin:1em 0 3em 0;
+    grid-gap:25px;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:100px repeat(2, 1fr);
+    .swish-title{
+      grid-column-start:1;
+      grid-column-end: 3;
+    }
 }
+section.mobile-notification{
+    height:1500px;
+    width:100%;
+    padding-top:2em;
+    border-top:1px solid $default-text;
+    margin:1em 0 3em 0;
+    grid-gap:25px;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:100px repeat(2, 1fr);
+    .swish-title{
+      grid-column-start:1;
+      grid-column-end: 3;
+    }
+}
+section.mobile-cart{
+    height:2000px;
+    width:100%;
+    padding-top:2em;
+    border-top:1px solid $default-text;
+    margin:1em 0 3em 0;
+    display:grid;
+    grid-gap:25px;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:100px repeat(3, 1fr);
+    .swish-title{
+      grid-column-start:1;
+      grid-column-end: 3;
+    }
+}
+
 
 
 //---Mobile---//
+#swish-mobile-onboard1{
+  background-image: url('../img/swish/mobile/swish-onboard1.png');
+}
+#swish-mobile-onboard2{
+  background-image: url('../img/swish/mobile/swish-onboard2.png');
+}
+#swish-mobile-onboard3{
+  background-image: url('../img/swish/mobile/swish-onboard3.png');
+}
+#swish-mobile-onboard4{
+  background-image: url('../img/swish/mobile/swish-onboard4.png');
+}
 
+#swish-mobile-profile{
+  background-image: url('../img/swish/mobile/swish-profile.png');
+}
+#swish-mobile-order1{
+  background-image: url('../img/swish/mobile/swish-order1.png');
+}
+#swish-mobile-order2{
+  background-image: url('../img/swish/mobile/swish-order2.png');
+}
+#swish-mobile-order3{
+  background-image: url('../img/swish/mobile/swish-order3.png');
+}
 
+#swish-mobile-wishlist1{
+  background-image: url('../img/swish/mobile/swish-wishlist1.png');
+}
+#swish-mobile-wishlist2{
+  background-image: url('../img/swish/mobile/swish-wishlist2.png');
+}
+#swish-mobile-wishlist3{
+  background-image: url('../img/swish/mobile/swish-wishlist3.png');
+}
+#swish-mobile-wishlist4{
+  background-image: url('../img/swish/mobile/swish-wishlist4.png');
+}
+
+#swish-mobile-notification1{
+  background-image: url('../img/swish/mobile/swish-notification1.png');
+}
+#swish-mobile-notification2{
+  background-image: url('../img/swish/mobile/swish-notification2.png');
+}
+#swish-mobile-notification3{
+  background-image: url('../img/swish/mobile/swish-notification3.png');
+}
+#swish-mobile-notification4{
+  background-image: url('../img/swish/mobile/swish-notification4.png');
+}
+
+#swish-mobile-cart1{
+  background-image: url('../img/swish/mobile/swish-cart1.png');
+}
+#swish-mobile-cart2{
+  background-image: url('../img/swish/mobile/swish-cart2.png');
+}
+#swish-mobile-cart3{
+  background-image: url('../img/swish/mobile/swish-cart3.png');
+}
+#swish-mobile-cart4{
+  background-image: url('../img/swish/mobile/swish-cart4.png');
+}
+#swish-mobile-cart5{
+  background-image: url('../img/swish/mobile/swish-cart5.png');
+}
+#swish-mobile-cart6{
+  background-image: url('../img/swish/mobile/swish-cart6.png');
+}
 
 //---Brwosers---//
 #browser-cart{
