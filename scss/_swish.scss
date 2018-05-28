@@ -171,13 +171,13 @@ section.swish-userflows{
   .swish-userflow-box{
     grid-column-start: 2;
     grid-column-end: 3;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $default-text;
     @include for-tablet-portait-up{
       grid-column: 1/2;
     }
-
-
-    background-color: $default-text;
-
   }
 }
 
@@ -210,7 +210,10 @@ section.swish-sketches{
 
   }
   .swish-sketch-box{
-   background-color: $default-text;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $default-text;
   }
 }
 
@@ -239,7 +242,7 @@ section.swish-br-box{
   margin: 0 0 1em 0;
   display:grid;
   width: 100%;
-  height:2000px;
+  height:2500px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 100px repeat(4, 500px);
   grid-gap: 25px 25px;
@@ -263,14 +266,12 @@ section.swish-br-box{
     }
 
   }
-  .swish-browser1{
+  .swish-browser{
+    background-position: center;
+    background-size: 78%;
+    background-repeat: no-repeat;
     background-color: $default-text;
   }
-  .swish-browser2{}
-  .swish-browser3{}
-  .swish-browser4{}
-  .swish-browser5{}
-  .swish-browser6{}
 }
 
 //--- Backgrounds & Images ----///
@@ -305,4 +306,51 @@ section.swish-br-box{
   background-position: center;
   background-repeat: no-repeat;
   //background-color: $background-grey;
+}
+
+
+#browser-cart{
+  background-image: url('../img/swish/browser/swish-browser-cart.png');
+}
+#browser-delivery{
+  background-image: url('../img/swish/browser/swish-browser-delivery.png');
+}
+#browser-item{
+  background-image: url('../img/swish/browser/swish-browser-item.png');
+}
+#browser-notifications{
+  background-image: url('../img/swish/browser/swish-browser-notifications.png');
+}
+#browser-orders{
+  background-image: url('../img/swish/browser/swish-browser-orders.png');
+}
+#browser-profile{
+  background-image: url('../img/swish/browser/swish-browser-profile.png');
+}
+#browser-sneakers{
+  background-image: url('../img/swish/browser/swish-browser-sneakers.png');
+}
+#browser-wishlist{
+  background-image: url('../img/swish/browser/swish-browser-wishlist.png');
+}
+
+//---User-Scenarios---//
+#swish-us1{
+  background-image:url('../img/swish/swish-us1.png');
+}
+#swish-us2{
+  background-image:url('../img/swish/swish-us2.png');
+}
+//---Swish Sketches---//
+#swish-sketch1{
+  background-image: url('../img/swish/swish-sketch1.png');
+}
+#swish-sketch2{
+  background-image: url('../img/swish/swish-sketch2.png');
+}
+#swish-sketch3{
+  background-image: url('../img/swish/swish-sketch3.png');
+}
+#swish-sketch4{
+  background-image: url('../img/swish/swish-sketch4.png');
 }
