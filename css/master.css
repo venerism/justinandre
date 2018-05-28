@@ -3045,26 +3045,39 @@ section.swish-process {
       height: 400px;
       background-color: #232431; }
 
-section.swish-personas {
+section.swish-persona {
   padding-top: 1em;
   border-top: 1px solid #232431;
   margin: 1em 0 1em 0;
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 600px;
+  height: 625px;
+  grid-template-columns: 2fr repeat(2, 1.9fr);
+  grid-template-rows: 625px;
   grid-column-gap: 25px; }
-  @media (max-width: 768px) {
-    section.swish-personas {
-      width: 95%;
-      grid-template-columns: 1fr;
-      grid-template-rows: 160px repeat(2, 600px);
-      grid-row-gap: 25px; } }
-  section.swish-personas aside.swish-persona-box {
-    margin-bottom: 1em;
-    width: 100%;
-    height: 400px;
-    background-color: #232431; }
+  section.swish-persona .swish-title {
+    grid-column-start: 1;
+    grid-column-end: 2; }
+  section.swish-persona .swish-persona-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    z-index: 20;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23); }
+    section.swish-persona .swish-persona-box .swish-persona-image {
+      height: 400px;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    section.swish-persona .swish-persona-box .swish-persona-description {
+      width: 100%;
+      height: 70%;
+      padding: 1em 1.5em 1em 1.5em; }
+      section.swish-persona .swish-persona-box .swish-persona-description li {
+        margin: 0.5em 0.5em 0; }
 
 section.swish-userflows {
   padding-top: 1em;
@@ -3091,6 +3104,24 @@ section.swish-userflows {
     @media (max-width: 768px) {
       section.swish-userflows .swish-userflow-box {
         grid-column: 1/2; } }
+
+section.swish-product-map {
+  padding-top: 1em;
+  display: grid;
+  border-top: 1px solid #232431;
+  margin: 1em 0 3em 0;
+  width: 100%;
+  height: 925px;
+  grid-template-columns: 1fr;
+  grid-row-gap: 25px;
+  grid-template-rows: 100px 800px; }
+  section.swish-product-map .swish-title {
+    grid-column-start: 1;
+    grid-column-end: 2; }
+  section.swish-product-map .swish-product-box {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
 
 section.swish-sketches {
   padding-top: 1em;
@@ -3173,6 +3204,12 @@ section.swish-prototypes {
     grid-column-start: 1;
     grid-column-end: 3; }
 
+.swish-splash {
+  background-image: url(../img/swish/swish-splash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
 .swish-mobile-card {
   background-size: 42%;
   background-position-y: 75%;
@@ -3248,6 +3285,18 @@ section.mobile-cart {
   section.mobile-cart .swish-title {
     grid-column-start: 1;
     grid-column-end: 3; }
+
+#swish-splash {
+  background-image: url("../img/swish/swish-splash.jpg"); }
+
+#persona-david {
+  background-image: url("../img/swish/persona-david.png"); }
+
+#persona-crystal {
+  background-image: url("../img/swish/persona-crystal.png"); }
+
+#swish-product-map {
+  background-image: url("../img/swish/swish-product-map.png"); }
 
 #swish-mobile-onboard1 {
   background-image: url("../img/swish/mobile/swish-onboard1.png"); }
