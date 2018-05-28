@@ -2017,21 +2017,21 @@ section.illustration-1password {
   background-image: url("../img/illustrations/esports3.png"); }
 
 #esports4 {
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 70%;
+  background-size: 35%;
   background-image: url("../img/illustrations/esports4.png"); }
 
 #esports5 {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 35%;
   background-image: url("../img/illustrations/esports5.png"); }
 
 #esports6 {
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 90%;
   background-image: url("../img/illustrations/esports6.png"); }
 
 #legup {
