@@ -152,6 +152,51 @@ section.swish-process{
 // }
 
 
+section.swish-problems{
+  padding-top: 1em;
+  border-top: 1px solid $default-text;
+  margin: 1em 0 1em 0;
+  display:grid;
+  width: 100%;
+  height:625px;
+  grid-template-columns: 3fr 4fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 25px;
+  .swish-title{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .swish-problem-box{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    li{
+      margin: 1.5em 0 1.5em 0;
+      padding: 0.5em 0 0.5em 0;
+      border-bottom: 1px solid $default-text;
+    }
+  }
+}
+section.swish-solutions{
+  padding-top: 1em;
+  border-top: 1px solid $default-text;
+  margin: 1em 0 1em 0;
+  display:grid;
+  width: 100%;
+  height:950px;
+  grid-template-columns: 3fr  4fr;
+  grid-template-rows: 1fr;
+  .swish-title{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .swish-solutions-box{
+    li{
+      margin: 2.5em 0 2.5em 0;
+    }
+  }
+}
+
+
 section.swish-persona{
   padding-top: 1em;
   border-top: 1px solid $default-text;
@@ -282,6 +327,37 @@ section.swish-sketches{
     background-color: $default-text;
   }
 }
+
+section.swish-low{
+  padding-top: 1em;
+  padding-bottom: 2em;
+  border-top: 1px solid $default-text;
+  //border-bottom:2px solid $default-text;
+  margin: 1em 0 2em 0;
+  display:grid;
+  width: 100%;
+  height: 800px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 1fr;
+  .swish-title{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .swish-low-box{
+    background-size: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: $default-text;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
+  }
+
+
+}
+
 
 //
 // section.swish-mobile{
@@ -482,6 +558,11 @@ section.mobile-cart{
 //--Splashbox---//
 #swish-splash{
   background-image: url('../img/swish/swish-splash.jpg');
+}
+
+//--Low Fidelity MockUp --//
+#swish-low-f{
+  background-image:url('../img/swish/swish-low.png');
 }
 
 
