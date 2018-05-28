@@ -228,8 +228,7 @@ section.swish-mobile{
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   grid-template-areas:
-  "swish_screen1 swish_wishlist swish_delivery"
-  ;
+  "swish_screen1 swish_wishlist swish_delivery";
   grid-template-rows: 600px;
   align-self: center;
 
@@ -332,6 +331,11 @@ section.swish-prototypes{
 }
 
 
+//---Mobile---//
+
+
+
+//---Brwosers---//
 #browser-cart{
   background-image: url('../img/swish/browser/swish-browser-cart.png');
 }
