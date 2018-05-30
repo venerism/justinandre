@@ -127,31 +127,6 @@ section.swish-process{
   }
 }
 
-
-// section.swish-personas{
-//     padding-top: 1em;
-//     border-top: 1px solid $default-text;
-//     margin: 1em 0 1em 0;
-//     display:grid;
-//     width: 100%;
-//     grid-template-columns: repeat(3, 1fr);
-//     grid-template-rows: 600px;
-//     grid-column-gap: 25px;
-//     @include for-tablet-portait-up{
-//       width: 95%;
-//       grid-template-columns: 1fr;
-//       grid-template-rows: 160px repeat(2, 600px);
-//       grid-row-gap:25px;
-//     }
-//   aside.swish-persona-box{
-//     margin-bottom: 1em;
-//     width: 100%;
-//     height: 400px;
-//     background-color: $default-text;
-//   }
-// }
-
-
 section.swish-problems{
   padding-top: 1em;
   border-top: 1px solid $default-text;
@@ -207,18 +182,39 @@ section.swish-persona{
   grid-template-columns: 2fr repeat(2,1.9fr);
   grid-template-rows: 625px;
   grid-column-gap: 25px;
+  @include for-tablet-portait-up{
+    width: 95%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90px 1fr 1fr;
+    height:750px;
+    grid-column-gap: 15px;
+  }
+  @include for-phone-only{
+    grid-template-rows: 80px 525px 525px;
+    grid-template-columns: 1fr;
+    height:1240px;
+    grid-row-gap: 25px;
+    grid-column-gap: 0;
+  }
   .swish-title{
     grid-column-start: 1;
     grid-column-end:2;
+    @include for-tablet-portait-up{
+      grid-column-end:3;
+    }
   }
   .swish-persona-box{
+
     display:flex;
     flex-direction: column;
     background-color: $white;
-    z-index: 20;
     -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
     -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
+    @include for-phone-only{
+      grid-column-start:1;
+      grid-column-end:2;
+    }
     .swish-persona-image{
       height:400px;
       width: 100%;
@@ -232,8 +228,14 @@ section.swish-persona{
       width:100%;
       height:70%;
       padding: 1em 1.5em 1em 1.5em;
+      @include for-tablet-portait-up{
+        padding: 0.5em 0.5em 0.5em 0.5em;
+      }
       li{
         margin: 0.5em 0.5em 0;
+        @include for-tablet-portait-up{
+          margin: 0.2em 0.2em 0.2em 0.2em;
+        }
       }
     }
   }
@@ -252,7 +254,7 @@ section.swish-userflows{
     @include for-tablet-portait-up{
       width: 95%;
       grid-template-columns: 1fr;
-      grid-template-rows: 140px repeat(2, 425px);
+      grid-template-rows: 100px repeat(2, 425px);
     }
 
 
@@ -269,7 +271,6 @@ section.swish-userflows{
   }
 }
 
-
 section.swish-product-map{
   padding-top:1em;
   display: grid;
@@ -280,15 +281,23 @@ section.swish-product-map{
   grid-template-columns: 1fr;
   grid-row-gap:25px;
   grid-template-rows: 100px 800px;
+  @include for-tablet-portait-up{
+    width:95%;
+    height:500px;
+    grid-template-rows: 80px 300px;
+    grid-row-gap:15px;
+  }
   .swish-title{
     grid-column-start: 1;
     grid-column-end: 2;
   }
   .swish-product-box{
-    //border:1px solid red;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    @include for-phone-only{
+      background-size: 95%;
+    }
   }
 }
 
@@ -354,27 +363,8 @@ section.swish-low{
     -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);
   }
-
-
 }
 
-
-//
-// section.swish-mobile{
-//   padding-top:1em;
-//   margin: 0em 0 1em 0;
-//   display:grid;
-//   width: 100%;
-//   height:800px;
-//   //background-color: $default-text;
-//   grid-template-columns: repeat(3, 1fr);
-//   grid-template-rows: 1fr;
-//   grid-template-areas:
-//   "swish_screen1 swish_wishlist swish_delivery";
-//   grid-template-rows: 600px;
-//   align-self: center;
-//
-// }
 
 
 section.swish-br-box{
@@ -414,7 +404,6 @@ section.swish-br-box{
     background-color: $default-text;
   }
 }
-
 
 section.swish-prototypes{
   margin: 1em 0 3em 0;
