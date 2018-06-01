@@ -137,9 +137,13 @@ h3{
 }
 
 h5{
-  font-size: 48px;
+  font-size: 42px;
   font-weight:normal;
   margin: 0;
+  @include for-tablet-portait-up{
+    font-size: 28px;
+    font-weight: lighter;
+  }
 
 }
 
