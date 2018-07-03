@@ -1,37 +1,20 @@
 // if device is less than or equal to 425px then do...
-
-
 @mixin for-phone-only{
   @media (max-width: 425px) {@content;}
 }
 // if device is less than or equal to 425px then do...
-
-
 @mixin for-tablet-portait-up{
   @media (max-width:768px) {@content;}
 }
 // if device is less than or equal to 768px then do...
-
-
 @mixin for-tablet-landscape-up{
   @media (max-width:900px) {@content;}
 }
 // if device is less than or equal to 900px then do...
-
 @mixin for-desktop{
   @media (min-width: 768px) and (max-width: 1024px) {@content;}
 }
 // if device is less than or equal to 1024px then do...
-
-
 @mixin for-hd-desktop{
   @media (min-width: 1400px) {@content;}
-}
-
-
-@mixin retinize($file, $type) {
-	background-image: url($file + "." + $type);
-	@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-		background-image: url($file + "@2x." + $type);
-	}
 }

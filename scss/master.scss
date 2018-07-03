@@ -1,22 +1,15 @@
 @import "layout";
 @import "typography";
-@import "colours";
 @import "mixins";
-@import "projects";
-@import "illustrations";
-@import "swish";
-@import "milya";
-@import "info";
-@import "airmax";
+@import "projectstyle";
 
-
-html{
-  background-color: $background-grey;
+html {
+  background-color: $background;
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   display: flex;
   justify-content: center;
   padding: 0;
@@ -24,4 +17,148 @@ body{
   font-family: sans-serif;
   flex-wrap: wrap;
   flex-direction: row;
+}
+
+content {
+  max-width: 1080px;
+  width: 100%;
+  padding: 0;
+  margin: 4em 0.5em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //border:1px solid green;
+  @include for-phone-only {
+    max-width: 100%;
+  }
+}
+
+section {
+  width: 100%;
+  display: grid;
+}
+
+nav {
+  background-color: $background;
+  top: 0;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  align-items: center;
+  float: left;
+  justify-content: space-between;
+
+  aside.leftnav {
+    margin-left: 0.8em;
+  }
+
+  aside.rightnav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 0.8em;
+
+    .nav-right1 {
+      grid-column: 1/2;
+    }
+
+    .nav-right2 {
+      grid-column: 2/3;
+    }
+  }
+}
+
+footer {
+  background-color: $black;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  section.footer-box{
+    display:grid;
+    width:1080px;
+    height:500px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 25px;
+      aside.footer-note{
+        grid-column: 1/4;
+        grid-row:1/2;
+        padding-bottom: 20px;
+      }
+      aside.footer-contact{
+        grid-column: 1/3;
+        grid-row:2/3;
+      }
+
+  }
+
+}
+
+button.home {
+  width: 65%;
+  height: 50px;
+  background-color: $background;
+  border: 0.5px solid $text-grey;
+  color: $text-grey;
+  padding: 18px 44px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: $text-grey;
+  color: $background;
+  cursor: pointer;
+}
+
+button.smallb {
+  width: 165px;
+  height: 40px;
+  background-color: $background;
+  border: 0.5px solid $text-grey;
+  color: $text-grey;
+  padding: 10px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+button.smallb:hover {
+  background-color: $text-grey;
+  color: $background;
+  cursor: pointer;
+}
+
+.scroll-to-top-link{
+  cursor: pointer;
+  display: block;
+  position:fixed;
+  bottom:25px;
+  right: 25px;
+  z-index: 1;
+  width: 23px;
+  height: 92px;
+@include for-phone-only{
+  display: none;
+}
+@include for-tablet-portait-up{
+  display: none;
+}
+@include for-hd-desktop{
+  display:block;
+}
 }

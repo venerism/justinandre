@@ -1,175 +1,124 @@
-@import url("https://rsms.me/inter/inter-ui.css");
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300');
 @import "colours";
-@import "mixins";
-
-
-body{
-font-family: 'Inter UI', sans-serif;
-}
-
-a.logo, a.blog{
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: bolder;
-  font-size: 0.8em;
-  color:$default-text;
-  letter-spacing: 1.2px;
-}
-
-a.temporary{
-  font-size: 2em;
-  cursor: pointer;
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import url("https://rsms.me/inter/inter-ui.css");
+//------Headers------//
+h1,
+h2,
+h3,
+h5 {
+  font-family: 'EB Garamond', serif;
+  color: $text-grey;
   font-weight: lighter;
-  color: $milya;
-  text-decoration: none;
-  @include for-tablet-portait-up{
-    font-size: 1.5em;
-  }
-  @include for-phone-only{
-    font-size: 1.3em;
-  }
-}
-a.temporary:hover,{
-  color:$link-hover;
+  margin: 5px 0 5px 0;
 }
 
-a.blog{
-  padding: 0px 7.5px 0px 7.5px;
-}
-a.logo:hover, a.blog:hover, a.projects:hover, {
-  color:$link-hover;
-  transition-duration: 0.2s;
+h1 {
+  font-size: 60px;
 }
 
-ul{
-  font-size: 1em;
-  list-style: none;
-  padding: 0;
+h2 {
+  font-size: 50px;
 }
 
-a.elsewhere{
-  font-size: 1em;
-  list-style: none;
-  padding-right: 0.2em;
-  color: $default-text;
-  text-decoration:none;}
-a.elsewhere:hover{
-  color:$link-hover;
-  transition-duration: 0.2s;
+h3 {
+  font-size: 23px;
 }
-
-blockquote.attention{
-  font-size: 2.5em;
-  color: $link-hover;
-  padding: 0;
-  margin: 0;
-  @include for-phone-only{
-    font-size: 1.2em;
-  }
-  @include for-tablet-portait-up{
-    font-size: 1.5em;
-  }
-}
-
-// Style Guides //
-
 h4{
-  line-height: 115px;
-  margin: 0;
-  font-size: 120px;
-  font-weight: bolder;
-  color: $background-grey;
-  -webkit-text-stroke-width: 2px;
- -webkit-text-stroke-color: $default-text;
- @include for-tablet-portait-up{
-   line-height: 65px;
-   font-size: 70px;
-   -webkit-text-stroke-width: 1px;
- }
- @include for-phone-only{
-   font-size: 55px;
-   line-height: 45px;
- }
-}
-
-// Subhead //
-
-
-
-h1{
-
-  font-weight: 400;
-  font-size:2.5em;
-  color:$default-text;
-  @include for-phone-only{
-    font-size: 1.2em;
-    width: 100%;
-    line-height: 1.5em;
-  }
-  @include for-tablet-portait-up{
-    font-size: 1.5em;
-  }
-  @include for-tablet-landscape-up{
-    font-size: 1.8em;
-  }
-}
-
-h2{
-  margin: 0;
-  font-size: 32px;
+  font-family: 'Inter UI', sans-serif;
+  color: $caption-grey;
   font-weight: lighter;
-  @include for-tablet-portait-up{
-    font-size: 22px;
-  }
-}
-
-h3{
   margin: 0;
-  font-size:64px;
-  font-weight:lighter;
-  @include for-tablet-portait-up{
-    font-size: 50px;
-  }
-  @include for-phone-only{
-    font-size: 40px;
-  }
+  font-size: 14px;
 }
 
 h5{
-  font-size: 42px;
-  font-weight:normal;
-  margin: 0;
-  @include for-tablet-portait-up{
-    font-size: 28px;
-    font-weight: lighter;
-  }
-
+  font-size: 14px;
+  color:$caption-grey;
 }
 
-// Captions //
-caption{
-  margin: 0;
+h6{
+  font-family: 'Inter UI', sans-serif;
+  font-size: 50px;
+}
+.contact-text{
+  color: $white;
+  margin-bottom: 10px;
+}
+
+
+
+//---Links---//
+a{
+  font-family: 'Inter UI', sans-serif;
+  color: $text-grey;
+  text-decoration: none;
   font-size: 12px;
+  transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+}
+
+a:hover{
+  font-weight: bold;
+  font-size: 12.3px;
+  transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+}
+
+//---Navigation Links---//
+
+a.nav-links {
+  font-size: 15px;
+  transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+}
+
+a.nav-links:visited {
+  color: $text-grey;
+}
+
+a.nav-links:hover {
+  color: $text-grey;
+  font-weight: bold;
+  transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+}
+
+//---Footer Links---//
+.footer-link{
+  font-family: 'Inter Ui', sans-serif;
+  font-size: 22px;
+  color:$white;
+  transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+}
+
+
+//---List---//
+ul{
+  text-decoration: none;
+  padding: 0;
+}
+li{
+  text-decoration: none;
+  list-style: none;
+}
+
+ul.elsewhere{
+  display: inline-block;
+}
+li.footer-elsewhere{
+  display: inline-block;
+  color:white;
   font-weight: normal;
 }
 
-// Body //
-p{
-  font-size: 18px;
-  margin: 0;
-  font-weight: lighter;
-  @include for-tablet-portait-up{
-    font-size: 16px;
-  }
-}
 
-li.biolist{
-  border-top: 1px solid $list-grey;
-  padding: 7px 0 7px 0;
-  font-size: 20px;
+//---Paragraphs & Captions---//
+p {
+  font-family: 'Inter UI', sans-serif;
+  color: $text-grey;
+  line-height: 22px;
+  font-size: 16px;
   font-weight: lighter;
-  b{
-    font-size: 16px;
-  }
+  margin: 10px 0 20px 0;
 }
