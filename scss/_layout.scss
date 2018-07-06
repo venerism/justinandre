@@ -7,7 +7,9 @@ section.splash {
   grid-template-columns: repeat(5,1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 25px;
-
+  @include for-phone-only{
+  height: 450px;
+  }
   aside.splashbox {
     grid-column: 1/5;
     grid-row: 2/3;
@@ -20,20 +22,37 @@ section.about {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr 1fr;
   grid-column-gap: 35px;
-
+  @include for-tablet-portait-up{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
   aside.biography {
     grid-column: 1/3;
     grid-row: 2/3;
+    @include for-tablet-portait-up{
+    grid-column: 1/5;
+    grid-row:1/2;
+    }
   }
 
   aside.experience {
     grid-column: 3/4;
     grid-row: 2/3;
+    @include for-tablet-portait-up{
+    grid-column: 1/5;
+    grid-row:2/3;
+    }
   }
 
   aside.expertise {
     grid-column: 4/5;
     grid-row: 2/3;
+    @include for-tablet-portait-up{
+    grid-column: 2/5;
+    grid-row:2/3;
+    }
   }
 }
 
@@ -50,12 +69,22 @@ section.projects {
     grid-template-columns: repeat(6,1fr);
     grid-column-gap: 25px;
     grid-template-rows: 1fr 1fr;
+    @include for-phone-only{
+      grid-template-rows: repeat(3,1fr);
+      grid-template-columns: repeat(8,1fr);
+      grid-row-gap: 25px;
+    }
 
     aside.project-img {
       background-color: $background-image;
       grid-column: 1/5;
       grid-row: 1/3;
       cursor: pointer;
+          transition-duration: .2s;
+      @include for-phone-only{
+        grid-column: 1/9;
+        grid-row:1/3;
+      }
     }
 
     aside.project-description {
@@ -63,15 +92,24 @@ section.projects {
       grid-row: 1/3;
       display: flex;
       flex-direction: column;
+      @include for-phone-only{
+        grid-column: 2/8;
+        grid-row:3/4;
+      }
     }
   }
 }
 
+//--- Images ---///
+
 #swish-home {
   background-position: center bottom;
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-image: url("../img/swish/swish-home.png");
+}
+#swish-home:hover{
+  background-size: 110%;
 }
 
 #swish-splash {
@@ -79,6 +117,7 @@ section.projects {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/swish/swish-splash.png");
+
 }
 
 #mposter-bkg {
@@ -87,19 +126,29 @@ section.projects {
   background-repeat: no-repeat;
   background-image: url("../img/mposters/movingposters-home.png");
 }
+#mposter-bkg:hover{
+  background-size: 80%;
+}
 
 #mposter-splash {
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/mposters/mposter-splash.png");
+  @include for-phone-only{
+    background-size: cover;
+  }
 }
+
 
 #milya-home {
   background-position: center bottom;
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-image: url("../img/milya/milya-home.png");
+}
+#milya-home:hover{
+  background-size: 110%;
 }
 
 #milya-splash {
@@ -115,6 +164,10 @@ section.projects {
   background-repeat: no-repeat;
   background-image: url("../img/nike/airmaxday.png");
 }
+#airmaxday-bkg:hover{
+  background-size: 80%;
+}
+
 
 #airmaxday-splash {
   background-position: center;
@@ -125,28 +178,28 @@ section.projects {
 
 #poster1 {
   background-position: center;
-  background-size: 75%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/mposters/poster1.png");
 }
 
 #poster2 {
   background-position: center;
-  background-size: 75%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/mposters/poster2.png");
 }
 
 #poster3 {
   background-position: center;
-  background-size: 75%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/mposters/poster3.png");
 }
 
 #poster4 {
   background-position: center;
-  background-size: 75%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/mposters/poster4.png");
 }
@@ -303,18 +356,27 @@ section.projects {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/swish/sw-research1.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 #sw-research2{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/swish/sw-research2.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 #sw-research3{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/swish/sw-research3.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 
 
@@ -468,6 +530,9 @@ section.projects {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/swish/sw-brand1.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 
 #sw-brand2 {
@@ -475,6 +540,9 @@ section.projects {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/swish/sw-brand2.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 
 #sw-brand3 {
@@ -482,6 +550,9 @@ section.projects {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/swish/sw-brand3.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 #sw-placeholder {
   background-position: center;
@@ -489,6 +560,26 @@ section.projects {
   background-repeat: no-repeat;
   background-image: url("../img/swish/sw-placeholder.png");
 }
+// --- Swish Sketches --- //
+#sw-sketch1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/swish/sw-sketch1.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
+}
+#sw-sketch2 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/swish/sw-sketch2.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
+}
+
 
 //--- Swish Wireframes ---//
 #sw-wireframe1 {
@@ -496,16 +587,228 @@ section.projects {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/swish/sw-wireframe1.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 #sw-wireframe2 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/swish/sw-wireframe2.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 #sw-wireframe3 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/swish/sw-wireframe3.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
+}
+#sw-wireframe4 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/swish/sw-wireframe4.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
+}
+
+// --- Swish Browsers ---//
+
+#sw-browser1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/swish/sw-browser1.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
+}
+#sw-browser2 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/swish/sw-browser2.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
+}
+#sw-browser3 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/swish/sw-browser3.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
+}
+
+
+// --- Milya Sign In--- //
+#milya-sign1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-sign1.png");
+}
+
+#milya-sign2 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-sign2.png");
+}
+#milya-sign3 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-sign3.png");
+}
+#milya-sign4 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-sign4.png");
+}
+
+// --- Milya Wallet --- //
+#milya-wallet1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-wallet1.png");
+}
+#milya-wallet2 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-wallet2.png");
+}
+#milya-wallet3 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-wallet3.png");
+}
+#milya-wallet4 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-wallet4.png");
+}
+#milya-wallet5 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-wallet5.png");
+}
+#milya-wallet6 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-wallet6.png");
+}
+#milya-wallet7 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-wallet7.png");
+}
+
+// --- Milya Various Screens ---//
+#milya-family {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-family.png");
+}
+#milya-moments {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-moments.png");
+}
+// --- Milya Brand Identity ---//
+#milya-branding {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-branding.png");
+}
+#milya-icons {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-icons.png");
+}
+
+// --- Milya Research --- //
+#milya-research1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-research1.png");
+}
+#milya-research2 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-research2.png");
+}
+#milya-research3 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-research3.png");
+}
+#milya-sketch{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-sketch1.png");
+}
+
+
+#milya-wireframe1{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-wireframe.png");
+}
+// --- Milya Messenger --- //
+#milya-msg1{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-msg1.png");
+}
+#milya-msg2{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-msg2.png");
+}
+#milya-msg3{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-msg3.png");
+}
+#milya-msg4{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-msg4.png");
+}
+#milya-msg5{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-msg5.png");
 }

@@ -8,6 +8,9 @@ section.project-splash {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 80px 600px 235px;
   grid-row-gap: 25px;
+  @include for-phone-only{
+  grid-template-rows: 80px 200px 150px;
+  }
 
   aside.project-title {
     grid-column: 1/3;
@@ -37,12 +40,23 @@ section.project-research {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 250px;
   grid-column-gap: 25px;
+  @include for-phone-only{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4,110px);
+  }
 
   aside.research-problem {
     grid-column: 1/2;
     grid-row: auto;
     border-right: 0.5px dotted $text-grey;
     padding-right: 10px;
+    @include for-phone-only{
+    border-right: 0px;
+    grid-column: 1/6;
+    grid-row:1/2;
+    padding-right: 0;
+    }
+
   }
 
   aside.research-inspiration {
@@ -50,6 +64,11 @@ section.project-research {
     grid-row: auto;
     border-right: 0.5px dotted $text-grey;
     padding-right: 10px;
+    @include for-phone-only{
+    border-right: 0px;
+    grid-column: 1/6;
+    grid-row:2/3;
+    }
   }
 
   aside.research-solution {
@@ -57,11 +76,23 @@ section.project-research {
     grid-row: auto;
     border-right: 0.5px dotted $text-grey;
     padding-right: 10px;
+    @include for-phone-only{
+    border-right: 0px;
+    grid-column: 1/6;
+    grid-row:3/4;
+    padding-right: 0;
+    }
   }
 
   aside.research-overview {
     grid-column: 4/5;
     grid-row: auto;
+    @include for-phone-only{
+    border-right: 0px;
+    grid-column: 1/6;
+    grid-row:4/5;
+    padding-right: 0;
+    }
   }
 }
 
@@ -72,53 +103,128 @@ section.project-slider {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 460px;
   grid-column-gap: 25px;
+  @include for-phone-only{
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 460px 300px;
+  grid-gap: 35px;
+  }
 
   aside.slider-description {
     grid-column: 1/3;
     grid-row: 1/2;
+    @include for-phone-only{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    }
   }
 
   aside.slider-box {
     grid-column: 3/7;
     grid-row: 1/2;
     background-color: $background-image;
+    @include for-phone-only{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    }
   }
 }
-
-section.project-sketch {
+section.big-window {
   border-top: 0.5px dotted $text-grey;
   padding-top: 35px;
   grid-template-columns: repeat(4,1fr);
-  grid-template-rows: 60px 600px 250px;
+  grid-template-rows: 60px 600px;
   grid-row-gap: 55px;
   grid-column-gap: 35px;
+  padding-bottom: 55px;
 
-  aside.sketch-title {
+  aside.big-window-title {
     text-align: center;
     grid-column: 1/5;
     grid-row: 1/2;
   }
 
-  aside.sketch-box {
+  aside.big-window-box {
     grid-column: 1/5;
+    grid-row: 2/3;
+    background-color: $background-image;
+  }
+}
+
+
+
+section.project-sketch {
+  border-top: 0.5px dotted $text-grey;
+  padding-top: 35px;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: 60px 600px 250px;
+  grid-row-gap: 55px;
+  grid-column-gap: 35px;
+  padding-bottom: 35px;
+  @include for-phone-only{
+    grid-template-rows: 60px 600px repeat(3,75px);
+    grid-row-gap: 35px;
+    padding-bottom: 45px;
+
+  }
+
+  aside.sketch-title {
+    text-align: center;
+    grid-column: 1/7;
+    grid-row: 1/2;
+  }
+
+  aside.sketch-box {
+    grid-column: 1/7;
     grid-row: 2/3;
     background-color: $background-image;
   }
 
   aside.sketch-description {
     grid-row: 3/4;
-    grid-column: 1/2;
+    grid-column: 1/3;
+    @include for-phone-only{
+      grid-column: 1/7;
+    }
   }
 
   aside.sketch-ideation {
     grid-row: 3/4;
-    grid-column: 2/3;
+    grid-column: 3/5;
+    @include for-phone-only{
+      grid-column: 1/7;
+      grid-row: 4/5;
+    }
   }
 
   aside.sketch-itiration {
     grid-row: 3/4;
-    grid-column: 3/4;
+    grid-column: 5/7;
+    @include for-phone-only{
+      grid-column: 1/7;
+      grid-row: 5/6;
+    }
   }
+}
+
+section.motion{
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border-top: 0.5px dotted $text-grey;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px 570px;
+  grid-row-gap: 35px;
+  @include for-phone-only{
+    grid-template-rows: 60px 250px;
+  }
+    aside.motion-title{
+      grid-row:1/2;
+      grid-column: 1/2;
+    }
+    aside.motion-box{
+      grid-row: 2/4;
+      grid-column: 1/2;
+      //background-color: $background-image;
+    }
 }
 
 section.brand-identity {
@@ -128,10 +234,14 @@ section.brand-identity {
   grid-template-columns: 1fr;
   grid-template-rows: 60px 600px;
   grid-row-gap: 35px;
+  @include for-phone-only{
+    grid-template-rows: 60px 440px;
+  }
 
   aside.brand-title {
     grid-column: 1/2;
     grid-row: 1/2;
+    text-align: center;
   }
 
   aside.brand-box {
@@ -149,10 +259,18 @@ section.extras {
   grid-template-rows: 50px 350px;
   grid-column-gap: 25px;
   grid-row-gap: 15px;
-
+  @include for-phone-only{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px repeat(3, 250px);
+    grid-row-gap: 25px;
+    padding-bottom: 35px;
+  }
   aside.extras-title {
     grid-row: 1/2;
     grid-column: 1/4;
+    @include for-phone-only{
+    grid-column: 1/3;
+    }
   }
 
   aside.extras-box1 {
@@ -161,10 +279,15 @@ section.extras {
     grid-row: 2/3;
     grid-column: 1/2;
     grid-row-gap: 15px;
+    @include for-phone-only{
+    grid-column: 1/3;
+    }
 
     article.extras-image {
       grid-row: 1/2;
       background-color: $background-image;
+      cursor: pointer;
+      transition-duration: .2s;
     }
 
     article.extras-subltitle {
@@ -181,16 +304,23 @@ section.extras {
     grid-row: 2/3;
     grid-column: 2/3;
     grid-row-gap: 15px;
+    @include for-phone-only{
+    grid-column: 1/3;
+    grid-row:3/4;
+    }
 
     article.extras-image {
       grid-row: 1/2;
       background-color: $background-image;
+      cursor: pointer;
+      transition-duration:.2s;
     }
 
     article.extras-subltitle {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+
     }
   }
 
@@ -200,10 +330,16 @@ section.extras {
     grid-row: 2/3;
     grid-column: 3/4;
     grid-row-gap: 15px;
+    @include for-phone-only{
+    grid-column: 1/3;
+    grid-row:4/5;
+    }
 
     article.extras-image {
       grid-row: 1/2;
       background-color: $background-image;
+      cursor: pointer;
+      transition-duration: .2s;
     }
 
     article.extras-subltitle {
@@ -300,21 +436,28 @@ section.posters {
   border-top: 0.5px dotted $text-grey;
   padding-top: 35px;
   padding-bottom: 35px;
-  grid-column-gap: 25px;
+  grid-column-gap: 55px;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 60px repeat(2,600px);
-  grid-row-gap: 35px;
+  grid-template-rows: 60px repeat(2,660px);
+  grid-row-gap: 20px;
+  @include for-phone-only{
+    grid-template-rows: 60px repeat(4, 330px);
+  }
 
   aside.poster-title {
     grid-column: 1/3;
     grid-row: 1/2;
     text-align: center;
+
   }
 
   aside.poster-gallery {
     display: grid;
-    grid-template-rows: 520px 240px;
-    grid-row-gap: 10px;
+    grid-template-rows: 520px 70px;
+    grid-row-gap: 25px;
+    @include for-phone-only{
+      grid-column: 1/3;
+    }
 
     article.poster-image {
       grid-row: 1/2;
@@ -322,27 +465,31 @@ section.posters {
 
     article.poster-description {
       grid-row: 2/3;
-      text-align: center;
+      text-align: left;
     }
 
     .poster1 {
       grid-column: 1/2;
       grid-row: 2/3;
+
     }
 
     .poster2 {
       grid-column: 2/3;
       grid-row: 2/3;
+
     }
 
     .poster3 {
       grid-column: 1/2;
       grid-row: 3/4;
+
     }
 
     .poster4 {
       grid-column: 2/3;
       grid-row: 3/4;
+
     }
   }
 }

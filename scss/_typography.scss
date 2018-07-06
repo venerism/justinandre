@@ -14,10 +14,23 @@ h5 {
 
 h1 {
   font-size: 60px;
+  @include for-tablet-portait-up{
+    font-size: 45px;
+  }
+  @include for-phone-only{
+    font-size: 30px;
+  }
+
 }
 
 h2 {
   font-size: 50px;
+  @include for-tablet-portait-up{
+    font-size: 35px;
+  }
+  @include for-phone-only{
+    font-size: 25px;
+  }
 }
 
 h3 {
@@ -29,6 +42,10 @@ h4{
   font-weight: lighter;
   margin: 0;
   font-size: 14px;
+  @include for-phone-only{
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 h5{
@@ -40,6 +57,16 @@ h6{
   font-family: 'Inter UI', sans-serif;
   font-size: 50px;
 }
+blockquote{
+  font-family: 'Inter UI', sans-serif;
+  font-size: 18px;
+  color:$white;
+  margin: 14px 0px 0px 0px;
+  @include for-phone-only{
+    font-size: 25px;
+  }
+}
+
 .contact-text{
   color: $white;
   margin-bottom: 10px;
@@ -67,7 +94,7 @@ a:hover{
 //---Navigation Links---//
 
 a.nav-links {
-  font-size: 15px;
+  font-size: 12px;
   transition-duration: .2s;
   -webkit-transition-duration: .2s;
 }
@@ -97,19 +124,23 @@ a.nav-links:hover {
 ul{
   text-decoration: none;
   padding: 0;
+  @include for-phone-only{
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 li{
   text-decoration: none;
   list-style: none;
-}
-
-ul.elsewhere{
-  display: inline-block;
-}
-li.footer-elsewhere{
-  display: inline-block;
-  color:white;
-  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  a.footerlink{
+    color:$white;
+  }
+  @include for-phone-only{
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 
@@ -121,4 +152,8 @@ p {
   font-size: 16px;
   font-weight: lighter;
   margin: 10px 0 20px 0;
-}
+  @include for-phone-only{
+    font-size: 14px;
+    line-height: 18px;
+    }
+  }
