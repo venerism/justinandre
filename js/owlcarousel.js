@@ -8,6 +8,7 @@ $(document).ready(function(){
     items:1,
     dots:false,
     autoHeight:true,
-    
+    autoHeightClass: 'owl-height'
+
 })
 });

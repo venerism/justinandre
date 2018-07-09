@@ -24,7 +24,7 @@ section.about {
   grid-column-gap: 35px;
   @include for-tablet-portait-up{
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 85px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
@@ -158,6 +158,8 @@ section.projects {
   background-image: url("../img/milya/milya-splash.png");
 }
 
+
+
 #airmaxday-bkg {
   background-position: center;
   background-size: 75%;
@@ -209,6 +211,9 @@ section.projects {
   background-size: 75%;
   background-repeat: no-repeat;
   background-image: url("../img/mposters/poster4.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 
 #poster-sketch2 {
@@ -216,6 +221,9 @@ section.projects {
   background-size: 75%;
   background-repeat: no-repeat;
   background-image: url("../img/mposters/poster-sketch2.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 
 #poster-sketch3 {
@@ -223,6 +231,9 @@ section.projects {
   background-size: 75%;
   background-repeat: no-repeat;
   background-image: url("../img/mposters/poster-sketch3.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 
 #poster-sketch4 {
@@ -230,6 +241,9 @@ section.projects {
   background-size: 75%;
   background-repeat: no-repeat;
   background-image: url("../img/mposters/poster-sketch4.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 
 #poster-sketch5 {
@@ -237,6 +251,9 @@ section.projects {
   background-size: 75%;
   background-repeat: no-repeat;
   background-image: url("../img/mposters/poster-sketch5.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 
 #sketch-poster1 {
@@ -244,6 +261,9 @@ section.projects {
   background-size: 75%;
   background-repeat: no-repeat;
   background-image: url("../img/mposters/poster-sketch1.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 
 #sketch-poster2 {
@@ -251,6 +271,9 @@ section.projects {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/mposters/poster-sketch2.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 
 #sketch-poster3 {
@@ -258,6 +281,9 @@ section.projects {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/mposters/poster-sketch3.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 
 #sketch-poster4 {
@@ -265,6 +291,9 @@ section.projects {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/mposters/poster-sketch4.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 
 #sketch-poster5 {
@@ -272,6 +301,9 @@ section.projects {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/mposters/poster-sketch5.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 
 .am-slider {
@@ -349,6 +381,37 @@ section.projects {
 .sw-sliderlarge{
   height:600px;
 }
+
+// --- Swish Idea --- //
+#sw-webex1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/swish/sw-webex1.png");
+  @include for-phone-only{
+    background-image: url("../img/swish/sw-webex1-r.png");
+  }
+}
+#sw-webex2 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/swish/sw-webex2.png");
+  @include for-phone-only{
+    background-image: url("../img/swish/sw-webex2-r.png");
+  }
+}
+#sw-webex3 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/swish/sw-webex3.png");
+  @include for-phone-only{
+    background-image: url("../img/swish/sw-webex3-r.png");
+  }
+}
+
+
 
 //--- Swish Research ---//
 #sw-research1{
@@ -579,6 +642,15 @@ section.projects {
     background-size: 99%;
   }
 }
+#sw-sketch3 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/swish/sw-sketch3.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
+}
 
 
 //--- Swish Wireframes ---//
@@ -618,6 +690,46 @@ section.projects {
     background-size: 99%;
   }
 }
+// --- Milya Feature ---//
+#milya-feature1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-feature1.png");
+  @include for-phone-only{
+    @include for-phone-only{
+      background-image: url("../img/milya/milya-feature1-r.png");
+    }
+  }
+}
+#milya-feature2 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-feature2.png");
+  @include for-phone-only{
+    background-image: url("../img/milya/milya-feature2-r.png");
+  }
+}
+#milya-feature3 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-feature3.png");
+  @include for-phone-only{
+    background-image: url("../img/milya/milya-feature3-r.png");
+  }
+}
+#milya-feature4 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-feature4.png");
+  @include for-phone-only{
+    background-image: url("../img/milya/milya-feature4-r.png");
+  }
+}
+
 
 // --- Swish Browsers ---//
 
@@ -740,12 +852,18 @@ section.projects {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/milya/milya-branding.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 #milya-icons {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/milya/milya-icons.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 
 // --- Milya Research --- //
@@ -754,24 +872,36 @@ section.projects {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/milya/milya-research1.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 #milya-research2 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/milya/milya-research2.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 #milya-research3 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/milya/milya-research3.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 #milya-sketch{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/milya/milya-sketch1.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 
 
@@ -780,6 +910,9 @@ section.projects {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/milya/milya-wireframe.png");
+  @include for-phone-only{
+    background-size: 99%;
+  }
 }
 // --- Milya Messenger --- //
 #milya-msg1{
@@ -811,4 +944,14 @@ section.projects {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/milya/milya-msg5.png");
+}
+#milya-msg6{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/milya/milya-msg6.png");
+  @include for-phone-only{
+    background-image: url("../img/milya/milya-feature2-r.png");
+  }
+
 }

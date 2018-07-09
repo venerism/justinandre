@@ -124,6 +124,7 @@ a.nav-links:hover {
 ul{
   text-decoration: none;
   padding: 0;
+  margin: 5px 0 15px 0px;
   @include for-phone-only{
     font-size: 14px;
     line-height: 18px;
