@@ -1,12 +1,17 @@
 @import "colours";
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond');
 @import url("https://rsms.me/inter/inter-ui.css");
+@font-face {
+  font-family:"Canela Light";
+  src:url(../fonts/Canela-Light.woff);
+}
 //------Headers------//
 h1,
 h2,
 h3,
 h5 {
-  font-family: 'EB Garamond', serif;
+  font-family: 'Canela-Light',serif;
+//font-family: 'EB Garamond', serif;
   color: $text-grey;
   font-weight: lighter;
   margin: 5px 0 5px 0;
