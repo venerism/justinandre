@@ -2613,6 +2613,10 @@ section.posters {
       grid-column: 2/3;
       grid-row: 3/4; }
 
+.responsive {
+  width: 70%;
+  height: auto; }
+
 html {
   background-color: #F7F7F7;
   margin: 0;
